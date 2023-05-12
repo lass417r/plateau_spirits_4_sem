@@ -1,6 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import { EB_Garamond } from "@next/font/google";
+import { EB_Garamond } from "@next/google/font";
 import Link from "next/link";
 
 const ebGaramond = EB_Garamond({
