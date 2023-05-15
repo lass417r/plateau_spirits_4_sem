@@ -67,12 +67,11 @@ module.exports = {
       link: ["1rem", { lineHeight: "125%" }],
       mobileButtonPrimary: ["1.25rem", { lineHeight: "2.063rem" }],
     },
-
     fontFamily: {
-      regular: ["var(--roca-regular)"],
+      normal: ["var(--roca-regular)"],
       tynd: ["var(--rocaHv-thin)"],
       let: ["var(--roca-light)"],
-      tyk: ["var(--rocaHv-bold)"],
+      tyk: ["var(--roca-bold)"],
       megettyk: ["var(--rocaHv-heavy)"],
       ssort: ["var(--rocaBl-black)"],
       copy: ["var(--eb-regular)"],

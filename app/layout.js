@@ -17,45 +17,39 @@ const rocaOneBlack = localFont({
   variable: "--rocaBl-black",
 });
 
-const RocaOne = localFont({
-  src: [
-    {
-      path: "../public/fonts/RocaOne-Bl.woff2",
-      weight: "900",
-      style: "normal",
-      variable: "--rocaBl-black",
-    },
-    {
-      path: "../public/fonts/RocaOne-Hv.woff2",
-      weight: "900",
-      style: "normal",
-      variable: "--rocaHv-heavy",
-    },
-    {
-      path: "../public/fonts/RocaOne-Th.woff2",
-      weight: "100",
-      style: "normal",
-      variable: "--roca-thin",
-    },
-    {
-      path: "../public/fonts/RocaOne-Lt.woff2",
-      weight: "300",
-      style: "normal",
-      variable: "--roca-light",
-    },
-    {
-      path: "../public/fonts/RocaOne-Bold.woff2",
-      weight: "bold",
-      style: "normal",
-      variable: "--roca-bold",
-    },
-    {
-      path: "../public/fonts/RocaOne-Rg.woff2",
-      weight: "normal",
-      style: "normal",
-      variable: "--roca-regular",
-    },
-  ],
+const rocaOneHeavy = localFont({
+  src: "../public/fonts/RocaOne-Hv.woff2",
+  weight: "900",
+  style: "normal",
+  variable: "--rocaHv-heavy",
+});
+
+const rocaOneBold = localFont({
+  src: "../public/fonts/RocaOne-bold.woff2",
+  weight: "bold",
+  style: "normal",
+  variable: "--roca-bold",
+});
+
+const rocaOneRegular = localFont({
+  src: "../public/fonts/RocaOne-Rg.woff2",
+  weight: "normal",
+  style: "normal",
+  variable: "--roca-regular",
+});
+
+const rocaOneLight = localFont({
+  src: "../public/fonts/RocaOne-Lt.woff2",
+  weight: "300",
+  style: "normal",
+  variable: "--roca-light",
+});
+
+const rocaOneThin = localFont({
+  src: "../public/fonts/RocaOne-Th.woff2",
+  weight: "100",
+  style: "normal",
+  variable: "--roca-thin",
 });
 
 export const metadata = {
@@ -65,12 +59,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="da" className={`${rocaOneBlack.variable} ${ebGaramond.variable}`}>
-      <body>
+    <html
+      lang="da"
+      className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable}${ebGaramond.variable}`}
+    >
+      <body className="bg-greybase">
         <header>
           <Header></Header>
         </header>
-        <main>{children}</main>
+        <main className="ml-14 mr-14">{children}</main>
         <footer></footer>
       </body>
     </html>
