@@ -79,6 +79,9 @@ module.exports = {
     borderRadius: {
       cornerRound: "10px",
     },
+    boxShadow: {
+      "3xl": "3px 3px 3px 3px rgba(0, 0, 0, 0.8)",
+    },
   },
   plugins: [],
 };

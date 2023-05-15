@@ -3,17 +3,18 @@ import Image from "next/image";
 import splash from "../public/images/splash_filler.png";
 import herocircle from "../public/assets/herocirkel.svg";
 import Link from "next/link";
+import Button from "./components/Button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex min-h-screen flex-col items-center justify-between p-5">
       <div className="flex z-10 w-full max-w-5xl items-center justify-between">
         <div>
           <h1 className="text-black500 text-h1 font-ssort">Small batch spiritus</h1>
           <h3 className="text-black500 text-h3 font-ssort">Håndlavet i kødbyen København</h3>
-          <button>Se produkter</button>
+          <Button href={"/shop"} text={"Se produkter"}></Button>
         </div>
-        <Image src={splash} width={300} height={300} alt="Flot billede af Gin flaske"></Image>
+        <Image src={splash} width={400} height={400} alt="Flot billede af Gin flaske"></Image>
       </div>
       <div>
         <Link href="#udvalgteProdukter">
@@ -24,7 +25,8 @@ export default function Home() {
         <div>
           <h2 className="text-h2 font-ssort">Udvalgte produkter</h2>
           <p>Udforsk vores podukter, håndlavet i Kødbyen, København.</p>
-          <button>Se produkter</button>
+
+          <Button href={"/shop"} text={"Se produkter"}></Button>
         </div>
         <div>
           <Image src={splash} width={150} height={150} alt="Flot billede af Gin flaske"></Image>
@@ -46,7 +48,7 @@ export default function Home() {
             Plateau Spirits' mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor vil
             du finde usædvanlige ingredienser som dragefrugt, columbiansk kaffe og mørk lakridssirup blandet med klassiske ingredienser som orrisrod, angelikarod, enebær, frisk lime og appelsin.
           </p>
-          <button>Se partnere</button>
+          <Button href={"/virksomhed"} text={"Se partnere"}></Button>
         </div>
         <Image src={splash} width={300} height={300} alt="Flot billede af Gin flaske"></Image>
       </div>
@@ -92,6 +94,6 @@ export default function Home() {
       <div className="pt-20">
         <h3>BESØG OS PÅ FLÆSKETORVET 6 - KØDBYEN BESØG OS PÅ FLÆSKETORVET 6 - KØDBYEN</h3>
       </div>
-    </main>
+    </div>
   );
 }
