@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 
 function Historie() {
   return (
@@ -16,7 +17,7 @@ function Historie() {
       </p>
       <p>I Plateau Spirits verden er der ingen grænser for, hvad en spiritus kan blive. Vi blander tradition og nysgerrighed for at skabe dråber, der overrasker og begejstrer vores kunder.</p>
       <p>- Tony Svensson og Jan Bay, stiftere af Plateau Spirits</p>
-      <button>Se vores produkter</button>
+      <Button href="/shop" text="Se vores produkter"></Button>
     </div>
   );
 }
