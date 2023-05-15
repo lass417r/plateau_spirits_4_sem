@@ -25,7 +25,7 @@ const rocaOneHeavy = localFont({
 });
 
 const rocaOneBold = localFont({
-  src: "../public/fonts/RocaOne-bold.woff2",
+  src: "../public/fonts/RocaOne-Bold.woff2",
   weight: "bold",
   style: "normal",
   variable: "--roca-bold",
