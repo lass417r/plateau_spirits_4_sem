@@ -26,9 +26,7 @@ export default function Header() {
           <button onClick={toggleMenu}>{isOpen ? <CloseIcon /> : <MenuIcon />}</button>
         </div>
       </div>
-      <nav
-        className={`transform ease-in-out transition-transform duration-200 ${isOpen ? "block" : "hidden"} md:block md:relative md:flex md:space-x-8 md:relative md:translate-x-0 md:flex md:space-x-8`}
-      >
+      <nav className={`transform ease-in-out transition-transform duration-200 ${isOpen ? "block" : "hidden"}  md:relative md:flex md:space-x-8  md:translate-x-0`}>
         <ul className="flex flex-col gap-4 space-y-4 py-4 px-4 bg-white md:space-y-0 md:flex-row md:bg-transparent">
           <li>
             <Link href="/shop">

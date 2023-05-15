@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Historie from "./historie";
-import Slideshow from "./slideshow";
+import Historie from "./Historie";
+import Slideshow from "./Slideshow";
 
 export default function Shop() {
   return (
@@ -10,4 +10,3 @@ export default function Shop() {
     </>
   );
 }
-// How can I make a page where the text in the left div stays fixed and the pictures scroll on scroll, with MotionOne and tailwindCSS?

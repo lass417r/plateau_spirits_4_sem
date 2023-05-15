@@ -45,7 +45,7 @@ export default function Home() {
         <div>
           <h2 className="text-h2 font-ssort">Chartreuse til Gorilla Bar</h2>
           <p>
-            Plateau Spirits' mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor vil
+            Plateau Spirits mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor vil
             du finde usædvanlige ingredienser som dragefrugt, columbiansk kaffe og mørk lakridssirup blandet med klassiske ingredienser som orrisrod, angelikarod, enebær, frisk lime og appelsin.
           </p>
           <Button href={"/virksomhed"} text={"Se partnere"}></Button>
@@ -60,7 +60,7 @@ export default function Home() {
         <div>
           <h2 className="text-h2 font-ssort">Vores tilgang </h2>
           <p>
-            Plateau Spirits' mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor vil
+            Plateau Spirits mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor vil
             du finde usædvanlige ingredienser som dragefrugt, columbiansk kaffe og mørk lakridssirup blandet med klassiske ingredienser som orrisrod, angelikarod, enebær, frisk lime og appelsin.
           </p>
         </div>
