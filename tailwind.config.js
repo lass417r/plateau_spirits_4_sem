@@ -70,11 +70,11 @@ module.exports = {
 
     fontFamily: {
       regular: ["var(--roca-regular)"],
-      thin: ["var(--rocaHv-thin)"],
-      light: ["var(--roca-light)"],
-      bold: ["var(--rocaHv-bold)"],
-      heavy: ["var(--rocaHv-heavy)"],
-      black: ["var(--rocaBl-black)"],
+      tynd: ["var(--rocaHv-thin)"],
+      let: ["var(--roca-light)"],
+      tyk: ["var(--rocaHv-bold)"],
+      megettyk: ["var(--rocaHv-heavy)"],
+      ssort: ["var(--rocaBl-black)"],
       copy: ["var(--eb-regular)"],
     },
     borderRadius: {
