@@ -41,7 +41,7 @@ module.exports = {
     },
     fontSize: {
       wh1: ["3.583rem", { lineHeight: "125%" }],
-      wh2: ["2.986rem", { lineHeight: "125%" }],
+      wh2: ["2.986rem", { lineHeight: "140%" }],
       wh3: ["2.488rem", { lineHeight: "125%" }],
       wh4: ["2.074rem", { lineHeight: "125%" }],
       wh5: ["1.782rem", { lineHeight: "125%" }],

@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center md:px-10">
-      <div className="flex items-center justify-between w-full md:w-auto p-4">
+      <div className="flex items-center justify-between w-full md:w-auto p- z-100">
         <Link href="/">
           <Image src={logo} alt="Company Logo" width={100} height={40} />
         </Link>
@@ -26,7 +26,7 @@ export default function Header() {
           <button onClick={toggleMenu}>{isOpen ? <CloseIcon /> : <MenuIcon />}</button>
         </div>
       </div>
-      <nav className={`transform ease-in-out transition-transform duration-200 ${isOpen ? "block" : "hidden"}  md:relative md:flex md:space-x-8  md:translate-x-0`}>
+      <nav className={`transform ease-in-out ${isOpen ? "block" : "hidden"}  md:relative md:flex md:space-x-8  md:translate-x-0`}>
         <ul className="flex flex-col gap-4 space-y-4 py-4 px-4 bg-white md:space-y-0 md:flex-row md:bg-transparent">
           <li>
             <Link href="/shop">

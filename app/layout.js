@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const ebGaramond = EB_Garamond({
   weight: "400",
@@ -64,11 +65,13 @@ export default function RootLayout({ children }) {
       className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable}${ebGaramond.variable}`}
     >
       <body className="bg-greybase">
-        <header>
+        <header className="m-5">
           <Header></Header>
         </header>
-        <main className="ml-10 mr-10">{children}</main>
-        <footer></footer>
+        <main>{children}</main>
+        <footer className="bg-matte200">
+          <Footer></Footer>
+        </footer>
       </body>
     </html>
   );
