@@ -4,8 +4,8 @@ import Button from "../components/Button";
 function Historie() {
   return (
     <div>
-      <h2>Vores historie</h2>
-      <p>
+      <h2 className="text-h2 font-tyk">Vores historie</h2>
+      <p className="font-copy text-copy">
         Plateau Spirits er grundlagt af fætrene Tonny Svensson og Jan Bay. Tonny havde brugt en del af sin fritid på at udvikle sin egen gin. Da han havde endelig havde udviklet en opskrift han var
         tilfreds med, havde han nu brug for at få den destilleret i et passende antal flasker af et professionelt destilleri. Tonny kontaktede flere danske destillerier, men ingen var interesserede i
         at producere hans gin, medmindre han bestilte en større levering, hvilket han ikke havde råd til. Til sidst lykkedes det ham, da han kontaktede Jonas Larsson fra Tevsjö Distillery i Sverige.
@@ -15,8 +15,10 @@ function Historie() {
         ville gøre det anderledes. Men det er ret svært både at skille sig ud og passe ind i en bestemt produktkategori. En visuel udtryk kan også komme så langt væk fra produktets sfære, at det ikke
         længere er appellerende.
       </p>
-      <p>I Plateau Spirits verden er der ingen grænser for, hvad en spiritus kan blive. Vi blander tradition og nysgerrighed for at skabe dråber, der overrasker og begejstrer vores kunder.</p>
-      <p>- Tony Svensson og Jan Bay, stiftere af Plateau Spirits</p>
+      <p className="font-tyk text-h6">
+        I Plateau Spirits verden er der ingen grænser for, hvad en spiritus kan blive. Vi blander tradition og nysgerrighed for at skabe dråber, der overrasker og begejstrer vores kunder.
+      </p>
+      <p className="font-copy text-copy">- Tony Svensson og Jan Bay, stiftere af Plateau Spirits</p>
       <Button href="/shop" text="Se vores produkter"></Button>
     </div>
   );

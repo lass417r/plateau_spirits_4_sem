@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
         <header>
           <Header></Header>
         </header>
-        <main className="ml-5 mr-5">{children}</main>
+        <main className="ml-10 mr-10">{children}</main>
         <footer></footer>
       </body>
     </html>

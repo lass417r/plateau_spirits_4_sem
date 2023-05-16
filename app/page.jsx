@@ -1,72 +1,77 @@
 import "../styles/globals.css";
 import Image from "next/image";
-import splash from "../public/images/splash_filler.png";
-import herocircle from "../public/assets/herocirkel.svg";
 import Link from "next/link";
 import Button from "./components/Button";
+import splash from "../public/images/Group194.png";
+import herocircle from "../public/assets/Layer_1-2.svg";
+import arrow from "../public/assets/ArrowUp.svg";
+import vodka from "../public/images/Group196.png";
+import gin from "../public/images/Asset17.png";
+import pic1 from "../public/images/pic1.png";
+import pic2 from "../public/images/pic2.png";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between p-5">
-      <div className="flex z-10 w-full max-w-5xl items-center justify-between">
-        <div>
-          <h1 className="text-black500 text-h1 font-ssort">Small batch spiritus</h1>
-          <h3 className="text-black500 text-h3 font-ssort">Håndlavet i kødbyen København</h3>
+      <section className="flex z-10 w-full max-w-5xl items-center justify-between md:pt-20">
+        <div className="flex flex-col gap-y-3 items-start">
+          <h1 className="text-black500 text-wh1 font-ssort">Small batch spiritus</h1>
+          <h3 className="text-black500 text-wh3 font-ssort pb-4">Håndlavet i kødbyen København</h3>
           <Button href={"/shop"} text={"Se produkter"}></Button>
         </div>
         <Image src={splash} width={400} height={400} alt="Flot billede af Gin flaske"></Image>
-      </div>
-      <div>
+      </section>
+      <section className="relative w-160px h-160px md:mt-20">
         <Link href="#udvalgteProdukter">
-          <Image src={herocircle} width={300} height={300} alt="Flot billede af Gin flaske"></Image>
+          <Image className="z-1 w-full h-full animate-spin-slow" src={herocircle} width={300} height={300} alt="Flot tekst illustration"></Image>
+          <Image className="z-10 w-14 h-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src={arrow} width={100} height={100} alt="Pil"></Image>
         </Link>
-      </div>
-      <div className="flex z-10 w-full max-w-5xl pt-20">
-        <div>
-          <h2 className="text-h2 font-ssort">Udvalgte produkter</h2>
+      </section>
+      <section className="flex gap-5 pt-20">
+        <div className="flex flex-col gap-y-3 basis-2/4 items-start">
+          <h2 className="text-wh2 font-ssort">Udvalgte produkter</h2>
           <p>Udforsk vores podukter, håndlavet i Kødbyen, København.</p>
-
           <Button href={"/shop"} text={"Se produkter"}></Button>
         </div>
-        <div>
-          <Image src={splash} width={150} height={150} alt="Flot billede af Gin flaske"></Image>
+        <div className="flex flex-col gap-2 basis-1/4">
+          <Image className="hover:cursor-mincursor" src={vodka} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
           <h5>Roÿe Vodka</h5>
           <p>3.200 DKK</p>
           <p>Vodka med arktisk kaviar. Begrænset mængde af 100 nummererede flasker.</p>
         </div>
-        <div>
-          <Image src={splash} width={150} height={150} alt="Flot billede af Gin flaske"></Image>
+        <div className="flex flex-col gap-2 basis-1/4">
+          <Image className="hover:cursor-mincursor" src={gin} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
           <h5>Plateau Gin</h5>
           <p>495 DKK</p>
           <p>Utrolige botanicals og et friskt take på hvad gin kan!</p>
         </div>
-      </div>
-      <div className="flex pt-20">
-        <div>
-          <h2 className="text-h2 font-ssort">Chartreuse til Gorilla Bar</h2>
+      </section>
+
+      <section className="flex flex-row gap-y-3 items-center justify-center gap-5 pt-20 pb-20">
+        <div className=" basis-1/2 flex flex-col gap-y-3 items-start">
+          <h2 className="text-wh2 font-ssort">Chartreuse til Gorilla Bar</h2>
           <p>
             Plateau Spirits mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor vil
             du finde usædvanlige ingredienser som dragefrugt, columbiansk kaffe og mørk lakridssirup blandet med klassiske ingredienser som orrisrod, angelikarod, enebær, frisk lime og appelsin.
           </p>
           <Button href={"/virksomhed"} text={"Se partnere"}></Button>
         </div>
-        <Image src={splash} width={300} height={300} alt="Flot billede af Gin flaske"></Image>
-      </div>
-      <div className="flex pt-20">
-        <div>
-          <Image src={splash} width={300} height={300} alt="Flot billede af Gin flaske"></Image>
-          {/* <Image src={splash} width={300} height={300} alt="Flot billede af Gin flaske"></Image> */}
+        <Image src={pic2} width={500} height={500} alt="Flot billede af Gin flaske"></Image>
+      </section>
+      <section className="flex flex-row gap-y-3">
+        <div className="basis-1/2">
+          <Image src={pic1} width={500} height={500} alt="Flot billede af Gin flaske"></Image>
         </div>
-        <div>
-          <h2 className="text-h2 font-ssort">Vores tilgang </h2>
+        <div className="basis-1/2">
+          <h2 className="text-wh2 font-ssort">Vores tilgang </h2>
           <p>
             Plateau Spirits mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor vil
             du finde usædvanlige ingredienser som dragefrugt, columbiansk kaffe og mørk lakridssirup blandet med klassiske ingredienser som orrisrod, angelikarod, enebær, frisk lime og appelsin.
           </p>
         </div>
-      </div>
-      <div className="pt-20">
-        <h1 className="text-h1 font-ssort">Awards</h1>
+      </section>
+      <section className="pt-20">
+        <h1 className="text-wh1 font-ssort">Awards</h1>
         <div className="flex">
           <div>
             <h4>Great evaluation of 94 out of 100.</h4>
@@ -90,8 +95,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="pt-20">
+      </section>
+      <div className="pt-20 textAnimation">
         <h3>BESØG OS PÅ FLÆSKETORVET 6 - KØDBYEN BESØG OS PÅ FLÆSKETORVET 6 - KØDBYEN</h3>
       </div>
     </div>
