@@ -15,8 +15,8 @@ function Historie() {
         <br /> <br />
         Til sidst lykkedes det ham, da han kontaktede Jonas Larsson fra Tevsjö Distillery i Sverige. Jonas synes hans produkt var unikt og interessant, og så blev de første 50 flasker gin skabt.
         <br /> <br />
-        "I 2018 tog vi på en “herre tur” til Los Angeles, hvor vi lejede en cabriolet og kørte rundt i byen og lyttede til høj musik. Udover at se forskellige koncerter var en af vores planer at
-        besøge spændende barer og destillerier."
+        &quot; I 2018 tog vi på en “herre tur” til Los Angeles, hvor vi lejede en cabriolet og kørte rundt i byen og lyttede til høj musik. Udover at se forskellige koncerter var en af vores planer at
+        besøge spændende barer og destillerier. &quot;
         <br /> <br />
         Ambitionen var at skabe et produkt, hvor både det visuelle og kvaliteten var i fokus. Et premium produkt, produceret bæredygtigt fra bunden med de bedste ingredienser.
         <br /> <br />
@@ -24,7 +24,8 @@ function Historie() {
         produktkategori. En visuel udtryk kan også komme så langt væk fra produktets sfære, at det ikke længere er appellerende.
       </p>
       <p className="font-tyk text-wh6">
-        I Plateau Spirits verden er der ingen grænser for, hvad en spiritus kan blive. Vi blander tradition og nysgerrighed for at skabe dråber, der overrasker og begejstrer vores kunder.
+        &quot; I Plateau Spirits verden er der ingen grænser for, hvad en spiritus kan blive. Vi blander tradition og nysgerrighed for at skabe dråber, der overrasker og begejstrer vores kunder.
+        &quot;
       </p>
       <p className="font-copy text-copy">- Tony Svensson og Jan Bay, stiftere af Plateau Spirits</p>
       <Button href="/shop" text="Se vores produkter"></Button>
