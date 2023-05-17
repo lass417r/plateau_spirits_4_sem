@@ -10,16 +10,16 @@
 .marqueeStyle {
   display: inline-block;
   /* Apply animation to this element */
-  -webkit-animation: scrolling-left1 20s linear infinite;
-  animation: scrolling-left1 20s linear infinite;
+  -webkit-animation: scrolling-left1 30s linear infinite;
+  animation: scrolling-left1 30s linear infinite;
 }
 
 .marqueeStyle2 {
   display: inline-block;
   /* Apply animation to this element */
-  -webkit-animation: scrolling-left2 20s linear infinite;
-  animation: scrolling-left2 20s linear infinite;
-  animation-delay: 10s;
+  -webkit-animation: scrolling-left2 30s linear infinite;
+  animation: scrolling-left2 30s linear infinite;
+  animation-delay: 16s;
 }
 /* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left1 {

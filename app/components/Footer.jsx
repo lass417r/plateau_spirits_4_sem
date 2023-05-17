@@ -6,7 +6,9 @@ import footerpic from "../../public/images/pic3.jpg";
 function Footer() {
   return (
     <div>
-      <Image src={footerpic}></Image>
+      <div className="">
+        <Image alt="Billede af lokation i Kødbyen" src={footerpic} width={1512} height={765} className="object-cover w-full"></Image>
+      </div>
       <div className="flex pt-10 pb-10">
         <div className="flex basis-2/5 justify-evenly">
           <Image src={logohvid} width={217} height={271} alt="Logo"></Image>
