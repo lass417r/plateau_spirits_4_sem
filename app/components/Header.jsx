@@ -17,10 +17,10 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="flex justify-between items-center md:px-10">
-      <div className="flex items-center justify-between w-full md:w-auto p- z-100">
+    <div className=" md:flex md:justify-between md:items-center  md:px-10 md:pt-5">
+      <div className="flex items-center md:justify-center  md:w-auto p- z-100">
         <Link href="/">
-          <Image src={logo} alt="Company Logo" width={100} height={40} />
+          <Image src={logo} alt="Company Logo" width={150} />
         </Link>
         <div className="md:hidden">
           <button onClick={toggleMenu}>{isOpen ? <CloseIcon /> : <MenuIcon />}</button>
@@ -72,6 +72,6 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
