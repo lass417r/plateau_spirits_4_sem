@@ -56,8 +56,8 @@ export default function Home() {
           <div className=" basis-1/2 flex flex-col gap-y-3 items-start">
             <h2 className="text-wh2 font-ssort">Chartreuse til Gorilla Bar</h2>
             <p>
-              Plateau Spirits mission er at skabe spiritus med kant ved at blande usædvanlige ingredienser og samarbejde med de bedste mulige destillatører for at opnå det perfekte resultat. Derfor
-              vil du finde usædvanlige ingredienser som dragefrugt, columbiansk kaffe og mørk lakridssirup blandet med klassiske ingredienser som orrisrod, angelikarod, enebær, frisk lime og appelsin.
+              Vi har samarbejdet med restaurant Gorilla om at udvikle en unik fransk inspireret likør de kan servere til deres gæster. Vi blev kontaktet af restaurant chefen og blev sat på en opgave,
+              at skabe en likør, inspireret af den velkendte chartreuse.
             </p>
             <Button href={"/virksomhed"} text={"Se partnere"}></Button>
           </div>
