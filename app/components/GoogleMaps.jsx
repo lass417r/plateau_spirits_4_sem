@@ -1,7 +1,7 @@
 import React from "react";
 
 const GoogleMap = ({ location }) => {
-  const src = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCiS2U7WJocGhlNyb0kFEjypOYAvnR_gnY&q=${location}`;
+  const src = `https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${location}`;
 
   return (
     <div className="h-full w-full">

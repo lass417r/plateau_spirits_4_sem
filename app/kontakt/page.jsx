@@ -1,9 +1,12 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 import Kontakt from "../components/Kontakt";
 import GoogleMap from "../components/GoogleMaps";
 import TextBanner from "../components/TextBanner";
+
+import deksel from "../../public/assets/deksel_skrift2.svg";
 
 export default function Shop() {
   return (
@@ -22,9 +25,9 @@ export default function Shop() {
           </p>
         </div>
       </section>
-      <section className=" bg-clay -mt-32 ">
-        <div className="mx-20 flex gap-10 pt-52">
-          <div className="basis-1/2 flex flex-col gap-10">
+      <section className=" bg-clay -mt-32">
+        <div className="mx-20 flex gap-10 pt-64">
+          <div className="basis-1/2 flex flex-col gap-10 relative">
             <h1 className="text-wh1 font-tyk text-blackbase">Kontaktinfo</h1>
             <div>
               <h5 className="text-wh font-tyk text-blackbase"> Email: </h5>
@@ -37,6 +40,9 @@ export default function Shop() {
               <Link className="text-copy font-copy  text-blackbase" href="tel:+4522422020">
                 +45 22 42 20 20
               </Link>
+            </div>
+            <div className="absolute top-1/3 right-1/4">
+              <Image src={deksel} width={442} height={439} alt="Dekorativ illustration"></Image>
             </div>
           </div>
 

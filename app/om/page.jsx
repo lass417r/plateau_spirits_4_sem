@@ -16,7 +16,7 @@ import cirkel from "../../public/assets/ingredienser_cirkel.svg";
 export default function Om() {
   return (
     <>
-      <div className="flex min-h-screen flex-row items-start justify-between md:mb-20">
+      <section className="flex min-h-screen flex-row items-start justify-between md:mb-20">
         <div className="basis-1/2 sticky top-3">
           <Historie className=""></Historie>
         </div>
@@ -42,7 +42,7 @@ export default function Om() {
             <Image className="fotoinview" src={pic5} width={450} height={550} alt="Billede af indgangen i kødbyen"></Image>
           </motion.div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -1,8 +1,10 @@
+"use client";
 import "../styles/globals.css";
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { CartProvider } from "../app/components/CartContext";
 
 const ebGaramond = EB_Garamond({
   weight: "400",
@@ -53,26 +55,23 @@ const rocaOneThin = localFont({
   variable: "--roca-thin",
 });
 
-export const metadata = {
-  title: "Plateau Spirits",
-  description: "Local distilleri in Copenhagen",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html
       lang="da"
       className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable}${ebGaramond.variable}`}
     >
-      <body className="bg-greybase">
-        <header className="m-5">
-          <Header></Header>
-        </header>
-        <main>{children}</main>
-        <footer className="bg-matte200">
-          <Footer></Footer>
-        </footer>
-      </body>
+      <CartProvider>
+        <body className="bg-greybase">
+          <header className="m-5">
+            <Header></Header>
+          </header>
+          <main>{children}</main>
+          <footer className="bg-matte200">
+            <Footer></Footer>
+          </footer>
+        </body>
+      </CartProvider>
     </html>
   );
 }
