@@ -105,7 +105,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <div className="w-full z">
+      <div className="w-full z bg-matte200 ">
         <TextBanner text="BESØG OS PÅ FLÆSKETORVET 6, KØDBYEN &nbsp; - &nbsp; BESØG OS PÅ FLÆSKETORVET 6, KØDBYEN"></TextBanner>
       </div>
     </>

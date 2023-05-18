@@ -46,7 +46,7 @@ export default function Shop() {
       </section>
       <section className="flex md:mb-20 flex-row items-start mx-20 gap-20 mt-32">
         <motion.div className="basis-1/2 flex justify-end" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-          <Image className="" src={pic10} width={500} height={500} alt="Billede af lokation" />
+          <Image className="" src={pic9} width={500} height={500} alt="Billede af lokation" />
         </motion.div>
         <div className="basis-1/2">
           <h3 className="text-wh3 font-tyk">Typer af events</h3>
@@ -72,7 +72,7 @@ export default function Shop() {
         <div className="w-full z">
           <TextBanner text="BOOK DIT NÆSTE EVENT! &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!  &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!"></TextBanner>
         </div>
-        <div className="kontaktformular mx-20 md:mb-20">
+        <div className="kontaktformular mx-20 md:my-20 flex flex-col gap-5">
           <h3 className="text-wh3 font-tyk text-yellowbase">Book her</h3>
           <KontaktEvents></KontaktEvents>
         </div>
