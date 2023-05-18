@@ -19,7 +19,7 @@ export default function Home() {
         <section className="flex z-10 w-full max-w-5xl items-center justify-between md:pt-20 p-5 ml-10 mr-10">
           <div className="flex flex-col gap-y-3 items-start">
             <h1 className="text-black500 text-wh1 font-ssort">Small batch spiritus</h1>
-            <h3 className="text-black500 text-wh3 font-ssort pb-4">Håndlavet i kødbyen København</h3>
+            <h2 className="text-black500 text-wh3 font-ssort pb-4">Håndlavet i kødbyen København</h2>
             <Button href={"/shop"} text={"Se produkter"}></Button>
           </div>
           <Image src={splash} width={400} height={400} alt="Flot billede af Gin flaske"></Image>
@@ -78,7 +78,7 @@ export default function Home() {
         </section>
         <section className="-mt-20  bg-matte200">
           <div className="p-5 mt-40 mb-20 mx-16">
-            <h1 className="text-titlexl font-ssort text-orangebase">Awards</h1>
+            <h2 className="text-titlexl font-ssort text-orangebase">Awards</h2>
             <div className="flex gap-10">
               <div className=" text-yellowbase basis-1/3 flex flex-col gap-3">
                 <h4 className="text-mobileH3 font-normal">Great evaluation of 94 out of 100.</h4>
@@ -106,7 +106,7 @@ export default function Home() {
         </section>
       </div>
       <div className="w-full z">
-        <TextBanner></TextBanner>
+        <TextBanner text="BESØG OS PÅ FLÆSKETORVET 6, KØDBYEN &nbsp; - &nbsp; BESØG OS PÅ FLÆSKETORVET 6, KØDBYEN"></TextBanner>
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 function Historie() {
   return (
-    <div className="flex gap-5 flex-col items-start p-5 ml-20 mr-20">
+    <div className="flex gap-5 flex-col items-start p-5 ml-20 ">
       <h2 className="text-wh2 font-tyk">Vores historie</h2>
       <p className="font-copy text-copy">
         Plateau Spirits er grundlagt af fætrene Tonny Svensson og Jan Bay.
