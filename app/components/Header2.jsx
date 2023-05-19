@@ -30,15 +30,25 @@ export default function Navbar() {
 
   // set color on scroll
   const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
 
-  window.addEventListener("scroll", changeColor);
+    // Check if window is defined (we are on the client-side)
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", changeColor);
+
+      // Cleanup after component is unmounted
+      return () => {
+        window.removeEventListener("scroll", changeColor);
+      };
+    }
+  }, []);
 
   const menu = [
     {
