@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import logo from "../../public/assets/navnelogo.svg";
