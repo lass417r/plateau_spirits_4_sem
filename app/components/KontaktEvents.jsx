@@ -35,8 +35,8 @@ function KontaktEvents() {
             Type event
           </label>
           <select id="country" className={styles.select} name="country">
-            <option value="general"> General enquiries</option>
-            <option value="tickets"> Ticket enquiries</option>
+            <option value="general"> Privat</option>
+            <option value="tickets"> Erhverv</option>
           </select>
         </div>
         <div>
@@ -47,7 +47,7 @@ function KontaktEvents() {
         </div>
 
         <input
-          className="justify-end voresKnap px-5 py-3 border-2 border-black400  bg-white100 text-black400 text-deskButtonPrimary tracking-wider font-ssort"
+          className="voresKnap justify-end border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-deskButtonPrimary tracking-wider text-black400"
           onClick={(e) => e.preventDefault()}
           type="submit"
           value="Send"

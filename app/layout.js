@@ -2,7 +2,7 @@
 import "../styles/globals.css";
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
-import Header from "./components/Header";
+import Header2 from "./components/Header2";
 import Footer from "./components/Footer";
 import { CartProvider } from "../app/components/CartContext";
 
@@ -63,9 +63,7 @@ export default function RootLayout({ children }) {
     >
       <CartProvider>
         <body className="bg-greybase">
-          <header className="m-5">
-            <Header></Header>
-          </header>
+          <Header2></Header2>
           <main>{children}</main>
           <footer className="bg-matte200">
             <Footer></Footer>

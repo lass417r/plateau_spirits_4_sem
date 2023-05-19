@@ -12,15 +12,16 @@ import pic11 from "../../public/images/pic11.png";
 
 import grid from "../../public/assets/grid.svg";
 import events from "../../public/assets/events.svg";
+import deksel from "../../public/assets/deksel_skrift.svg";
 
 export default function Shop() {
   return (
     <>
-      <section className="flex min-h-screen flex-row items-start mx-20 justify-between md:mb-20">
-        <div className="basis-1/2 sticky top-3">
-          <div className="flex gap-5 flex-col items-start p-5">
-            <h1 className="text-wh1 font-tyk text-orangebase">Plateau Events </h1>
-            <h2 className="text-wh2 font-tyk">Events & Smagninger</h2>
+      <section className="mx-20 flex min-h-screen flex-row items-start justify-between md:mb-20">
+        <div className="sticky top-3 basis-1/2">
+          <div className="flex flex-col items-start gap-5 p-5">
+            <h1 className="font-tyk text-wh1 text-orangebase">Plateau Events </h1>
+            <h2 className="font-tyk text-wh2">Events & Smagninger</h2>
             <p className="font-copy text-copy">
               Vi tilbyder muligheden for at afholde events og arrangementer i vores showroom i Kødbyen.
               <br /> <br />
@@ -30,10 +31,10 @@ export default function Shop() {
             <Button href="/shop" text="Book Event"></Button>
           </div>
         </div>
-        <div className="basis-1/2 flex gap-5 flex-col items-center p-5 relative">
+        <div className="relative flex basis-1/2 flex-col items-center gap-5 p-5">
           <Image className=" absolute  z-0 " src={grid} width={835} height={1106} alt="Illustrativt element" />
           <motion.div className="relative inline-block md:mt-32" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-            <Image className=" absolute z-10 -right-16 -top-28" src={events} width={318} height={456} alt="Illustrativt element" />
+            <Image className=" absolute -right-16 -top-28 z-10" src={events} width={318} height={456} alt="Illustrativt element" />
             <Image className=" z-0 md:mt-5" src={pic8} width={500} height={500} alt="Billede af lokation" />
           </motion.div>
           <motion.div className="z-10 md:-mt-20 md:ml-20" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
@@ -44,12 +45,12 @@ export default function Shop() {
           </motion.div>
         </div>
       </section>
-      <section className="flex md:mb-20 flex-row items-start mx-20 gap-20 mt-32">
-        <motion.div className="basis-1/2 flex justify-end" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
+      <section className="mx-20 mt-32 flex flex-row items-start gap-20 md:mb-20">
+        <motion.div className="flex basis-1/2 justify-end" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
           <Image className="" src={pic9} width={500} height={500} alt="Billede af lokation" />
         </motion.div>
         <div className="basis-1/2">
-          <h3 className="text-wh3 font-tyk">Typer af events</h3>
+          <h3 className="font-tyk text-wh3">Typer af events</h3>
           <p>
             <br />
             Vi tilbyder forskellige typer af events, og er altid fleksible for at imødekomme jeres ønsker.
@@ -68,13 +69,16 @@ export default function Shop() {
           </p>
         </div>
       </section>
-      <section className="bg-matte200 flex min-h-screen flex-col items-center  justify-between">
-        <div className="w-full z">
+      <section className="flex min-h-screen flex-col items-center justify-between  bg-matte200">
+        <div className="z w-full">
           <TextBanner text="BOOK DIT NÆSTE EVENT! &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!  &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!"></TextBanner>
         </div>
-        <div className="kontaktformular mx-20 md:my-20 flex flex-col gap-5">
-          <h3 className="text-wh3 font-tyk text-yellowbase">Book her</h3>
-          <KontaktEvents></KontaktEvents>
+        <div className="kontaktformular  mx-20 flex flex-col gap-5 md:my-20">
+          <h3 className="font-tyk text-wh3 text-yellowbase ">Book her</h3>
+          <KontaktEvents className="z-10"></KontaktEvents>
+        </div>
+        <div className="relative">
+          <Image className="absolute" src={deksel} alt="Illustrativt element" width={500} height={500}></Image>
         </div>
       </section>
     </>
