@@ -2,9 +2,9 @@
 import "../styles/globals.css";
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
-import Header2 from "./components/Header2";
-import Footer from "./components/Footer";
-import { CartProvider } from "../app/components/CartContext";
+import Header2 from "../components/Header2";
+import Footer from "../components/Footer";
+import { CartProvider } from "../components/CartContext";
 
 const ebGaramond = EB_Garamond({
   weight: "400",

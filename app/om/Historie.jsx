@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "../components/Button";
+import Button from "../../components/Button";
 
 function Historie() {
   return (
-    <div className="flex gap-5 flex-col items-start p-5 ml-20 ">
-      <h2 className="text-wh2 font-tyk">Vores historie</h2>
+    <div className="ml-20 flex flex-col items-start gap-5 p-5 ">
+      <h2 className="font-tyk text-wh2">Vores historie</h2>
       <p className="font-copy text-copy">
         Plateau Spirits er grundlagt af fætrene Tonny Svensson og Jan Bay.
         <br /> <br />

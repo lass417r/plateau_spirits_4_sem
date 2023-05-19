@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Button from "../components/Button";
-import TextBanner from "../components/TextBanner";
-import KontaktEvents from "../components/KontaktEvents";
+import Button from "../../components/Button";
+import TextBanner from "../../components/TextBanner";
+import KontaktEvents from "../../components/KontaktEvents";
 
 import pic8 from "../../public/images/pic8.png";
 import pic9 from "../../public/images/pic9.png";
@@ -69,16 +69,16 @@ export default function Shop() {
           </p>
         </div>
       </section>
-      <section className="flex min-h-screen flex-col items-center justify-between  bg-matte200">
+      <section className=" flex min-h-screen flex-col items-center justify-between  bg-matte200">
         <div className="z w-full">
           <TextBanner text="BOOK DIT NÆSTE EVENT! &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!  &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!"></TextBanner>
         </div>
-        <div className="kontaktformular  mx-20 flex flex-col gap-5 md:my-20">
-          <h3 className="font-tyk text-wh3 text-yellowbase ">Book her</h3>
-          <KontaktEvents className="z-10"></KontaktEvents>
-        </div>
-        <div className="relative">
-          <Image className="absolute" src={deksel} alt="Illustrativt element" width={500} height={500}></Image>
+        <div className=" flex">
+          <div className="kontaktformular  mx-20 flex basis-1/2 flex-col gap-5 md:my-20">
+            <h3 className="font-tyk text-wh3 text-yellowbase ">Book her</h3>
+            <KontaktEvents className="z-10"></KontaktEvents>
+          </div>
+          <Image className="basis-1/2" src={events} alt="Illustrativt element" width={400} height={400}></Image>
         </div>
       </section>
     </>

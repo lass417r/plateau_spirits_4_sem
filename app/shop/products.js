@@ -1,6 +1,7 @@
 export const products = Array.from({ length: 10 }, (_, i) => ({
   id: i + 1,
   name: `Product ${i + 1}`,
+  imageUrl: `Product ${i + 1}`,
   price: (i + 1) * 10,
   quantity: 1,
 }));

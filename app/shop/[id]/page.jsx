@@ -1,17 +1,30 @@
 "use client";
-import { useRouter } from "next/router";
-import { products } from "../products"; // Import your products array
+
+import { useState, useEffect } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 import Image from "next/image";
 
 const ProductDetail = () => {
-  const router = useRouter();
-  const { id } = router.query;
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [product, setProduct] = useState();
 
-  // Find the product with the matching id
-  const product = products.find((prod) => prod.id === id);
+  useEffect(() => {
+    const id = searchParams.get("id");
 
+    if (id) {
+      console.log("id:", id);
+      fetch(`/api/products/${id}`, { cache: "force-cache" })
+        .then((response) => response.json())
+        .then((data) => setProduct(data))
+        .catch((err) => console.error(err));
+    }
+  }, [pathname, searchParams]);
+  console.log("product:", product);
+  console.log("pathname:", pathname);
+  console.log("searchParams:", searchParams);
   if (!product) {
-    return <div>Product not found</div>;
+    return <div>Loading...</div>;
   }
 
   return (
@@ -23,13 +36,5 @@ const ProductDetail = () => {
     </div>
   );
 };
-
-export async function generateStaticParams() {
-  const prods = await fetch(products).then((res) => res.json());
-
-  return prods.map((post) => ({
-    slug: post.id,
-  }));
-}
 
 export default ProductDetail;

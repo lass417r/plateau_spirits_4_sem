@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./components/Button";
-import TextBanner from "./components/TextBanner";
+import Button from "../components/Button";
+import TextBanner from "../components/TextBanner";
 
 import herocircle from "../public/assets/Layer_1-2.svg";
 import arrow from "../public/assets/ArrowUp.svg";
