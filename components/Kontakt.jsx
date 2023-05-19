@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Contact.module.css";
+import styles from "../styles/Contact.module.css";
 
 function Kontakt() {
   return (
@@ -47,7 +47,7 @@ function Kontakt() {
         </div>
 
         <input
-          className="justify-end voresKnap px-5 py-3 border-2 border-black400  bg-white100 text-black400 text-deskButtonPrimary tracking-wider font-ssort"
+          className="voresKnap justify-end border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-deskButtonPrimary tracking-wider text-black400"
           onClick={(e) => e.preventDefault()}
           type="submit"
           value="Send"

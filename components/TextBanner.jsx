@@ -1,5 +1,5 @@
 "use client";
-import Styles from "../../styles/rss.css";
+import Styles from "../styles/rss.css";
 
 function TextBanner(props) {
   return (
