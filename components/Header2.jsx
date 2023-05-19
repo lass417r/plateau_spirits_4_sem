@@ -3,11 +3,11 @@ import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-import logo from "../../public/assets/navnelogo.svg";
-import ikoner from "../../public/assets/Ikoner.svg";
-import ikoner_kopi from "../../public/assets/Ikoner-kopi.svg";
-import luk from "../../public/assets/sort.svg";
-import oopen from "../../public/assets/sort-kopi.svg";
+import logo from "../public/assets/navnelogo.svg";
+import ikoner from "../public/assets/Ikoner.svg";
+import ikoner_kopi from "../public/assets/Ikoner-kopi.svg";
+import luk from "../public/assets/sort.svg";
+import oopen from "../public/assets/sort-kopi.svg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
