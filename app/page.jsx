@@ -38,20 +38,20 @@ export default function Home() {
         <section id="udvalgteProdukter" className="  ml-10 mr-10 flex gap-5 p-5 pt-20">
           <div className=" flex basis-2/4 flex-col items-start gap-y-3">
             <h2 className="udvalgteProdukter font-ssort text-wh2">Udvalgte produkter</h2>
-            <p>Udforsk vores podukter, håndlavet i Kødbyen, København.</p>
+            <p className="font-copy text-copy">Udforsk vores podukter, håndlavet i Kødbyen, København.</p>
             <Button href={"/shop"} text={"Se produkter"}></Button>
           </div>
           <div className="flex basis-1/4 flex-col gap-2">
             <Image className="hover:cursor-mincursor" src={vodka} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-            <h5>Roÿe Vodka</h5>
-            <p>3.200 DKK</p>
-            <p>Vodka med arktisk kaviar. Begrænset mængde af 100 nummererede flasker.</p>
+            <h5 className="text-wh5 font-normal">Roÿe Vodka</h5>
+            <p className="font-copy text-copy">3.200 DKK</p>
+            <p className="font-copy text-copy">Vodka med arktisk kaviar. Begrænset mængde af 100 nummererede flasker.</p>
           </div>
           <div className="flex basis-1/4 flex-col gap-2">
             <Image className="hover:cursor-mincursor" src={gin} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-            <h5>Plateau Gin</h5>
-            <p>495 DKK</p>
-            <p>Utrolige botanicals og et friskt take på hvad gin kan!</p>
+            <h5 className="text-wh5 font-normal">Plateau Gin</h5>
+            <p className="font-copy text-copy">495 DKK</p>
+            <p className="font-copy text-copy">Utrolige botanicals og et friskt take på hvad gin kan!</p>
           </div>
         </section>
 
@@ -62,7 +62,7 @@ export default function Home() {
         <section className="ml-10 mr-10 flex flex-row items-center justify-center gap-5 gap-y-3 p-5 pb-20 pt-20">
           <div className=" flex basis-1/2 flex-col items-start gap-y-3">
             <h2 className="font-ssort text-wh2">Chartreuse til Gorilla Bar</h2>
-            <p>
+            <p className="font-copy text-copy">
               Vi har samarbejdet med restaurant Gorilla om at udvikle en unik fransk inspireret likør de kan servere til deres gæster. Vi blev kontaktet af restaurant chefen og blev sat på en opgave,
               at skabe en likør, inspireret af den velkendte chartreuse.
             </p>

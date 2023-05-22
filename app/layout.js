@@ -1,10 +1,8 @@
-"use client";
 import "../styles/globals.css";
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
 import Header2 from "../components/Header2";
 import Footer from "../components/Footer";
-import { CartProvider } from "../components/CartContext";
 
 const ebGaramond = EB_Garamond({
   weight: "400",
@@ -55,21 +53,24 @@ const rocaOneThin = localFont({
   variable: "--roca-thin",
 });
 
+export const metadata = {
+  title: "Plateau Spirits",
+  description: "Created by BCL",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
       lang="da"
-      className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable}${ebGaramond.variable}`}
+      className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable} ${ebGaramond.variable} scroll-smooth antialiased`}
     >
-      <CartProvider>
-        <body className="bg-greybase">
-          <Header2></Header2>
-          <main>{children}</main>
-          <footer className="bg-matte200">
-            <Footer></Footer>
-          </footer>
-        </body>
-      </CartProvider>
+      <body className="bg-greybase">
+        <Header2></Header2>
+        <main>{children}</main>
+        <footer className="bg-matte200">
+          <Footer></Footer>
+        </footer>
+      </body>
     </html>
   );
 }
