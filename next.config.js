@@ -4,12 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.swell.store",
-      },
-    ],
+    domains: ["cdn.swell.store", "cdn.schema.io"],
   },
 };
 

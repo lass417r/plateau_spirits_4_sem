@@ -1,7 +1,10 @@
 "use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
+import { getCart } from "@/lib/swell/cart";
+import useSWR from "swr";
 import { motion } from "framer-motion";
 
 import logo from "../public/assets/navnelogo.svg";
@@ -11,6 +14,8 @@ import luk from "../public/assets/sort.svg";
 import oopen from "../public/assets/sort-kopi.svg";
 
 export default function Navbar() {
+  const { data: cart, isLoading } = useSWR("cart", getCart);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const ref = useRef();
 
@@ -88,15 +93,19 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Link href="/kurv" className=" mx-3 font-tyk text-blackbase hover:text-orangebase ">
-              <Image src={ikoner} alt="Cart icon" width={20} height={20} />
+            <Link href="/kurv" className="flex items-center gap-x-2 pl-4">
+              <Image src={ikoner_kopi} alt="Cart icon" width={30} height={30} />
+
+              {cart?.item_quantity ? <span className="rounded text-xs flex h-5 w-5 items-center justify-center bg-orangebase font-medium text-white100">{cart?.item_quantity}</span> : null}
             </Link>
           </nav>
           {/*MOBILE ONLY*/}
           <div className="flex items-center justify-center space-x-4 md:hidden ">
             <div>
-              <Link href="/kurv" className="flex">
+              <Link href="/kurv" className="flex items-center gap-x-2 pl-4">
                 <Image src={ikoner_kopi} alt="Cart icon" width={30} height={30} />
+
+                {cart?.item_quantity ? <span className="rounded text-xs flex h-5 w-5 items-center justify-center bg-orangebase font-medium text-white100">{cart?.item_quantity}</span> : null}
               </Link>
             </div>
             <div className="text-2xl md:hidden">{menuOpen ? <CloseIcon onClick={toggleCart} /> : <HamburgerIcon onClick={toggleCart} />}</div>

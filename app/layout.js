@@ -10,42 +10,36 @@ const ebGaramond = EB_Garamond({
   variable: "--eb-regular",
   subsets: ["latin-ext"],
 });
-
 const rocaOneBlack = localFont({
   src: "../public/fonts/RocaOne-Bl.woff2",
   weight: "900",
   style: "normal",
   variable: "--rocaBl-black",
 });
-
 const rocaOneHeavy = localFont({
   src: "../public/fonts/RocaOne-Hv.woff2",
   weight: "900",
   style: "normal",
   variable: "--rocaHv-heavy",
 });
-
 const rocaOneBold = localFont({
   src: "../public/fonts/RocaOne-Bold.woff2",
   weight: "bold",
   style: "normal",
   variable: "--roca-bold",
 });
-
 const rocaOneRegular = localFont({
   src: "../public/fonts/RocaOne-Rg.woff2",
   weight: "normal",
   style: "normal",
   variable: "--roca-regular",
 });
-
 const rocaOneLight = localFont({
   src: "../public/fonts/RocaOne-Lt.woff2",
   weight: "300",
   style: "normal",
   variable: "--roca-light",
 });
-
 const rocaOneThin = localFont({
   src: "../public/fonts/RocaOne-Th.woff2",
   weight: "100",
@@ -67,6 +61,7 @@ export default function RootLayout({ children }) {
       <body className="bg-greybase">
         <Header2></Header2>
         <main>{children}</main>
+
         <footer className="bg-matte200">
           <Footer></Footer>
         </footer>

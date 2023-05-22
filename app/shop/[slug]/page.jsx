@@ -1,22 +1,22 @@
-import { getAllProducts, getProductBySlug } from "@/lib/swell/products";
-
-export async function generateStaticParams() {
-  const products = await getAllProducts();
-
-  return products.map((product) => ({
-    slug: product.slug,
-  }));
-}
+import { getProductBySlugOrId } from "@/lib/swell/products";
+import Product from "@/components/product";
+import Cocktail from "./Cocktail";
+import ProductRecs from "./ProductRecs";
 
 export default async function productPage({ params }) {
-  const product = await getProductBySlug(params.slug);
-
-  const { name, description } = product;
+  const product = await getProductBySlugOrId(params.slug);
 
   return (
     <div>
-      <h1>{name}</h1>
-      <p>{description}</p>
+      <section className=" mx-32">
+        <Product product={product} />
+      </section>
+      <section className=" overflow-hidden bg-matte200">
+        <Cocktail />
+      </section>
+      <section className=" mx-32">
+        <ProductRecs />
+      </section>
     </div>
   );
 }
