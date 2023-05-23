@@ -32,7 +32,7 @@ function Footer() {
           </Link>
         </div>
 
-        <div className="flex basis-1/5 flex-col items-start gap-2">
+        <div className="flex basis-1/5 flex-row items-start gap-2 md:flex-col">
           <h6 className="font-megettyk text-wh6 text-yellowbase">Find os</h6>
           <p className="font-copy text-copy text-yellowbase">
             Flæsketorvet 6 <br /> 1711 Copenhagen

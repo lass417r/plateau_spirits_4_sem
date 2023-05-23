@@ -3,7 +3,7 @@ import cocktailpic from "../../../public/images/cocktailpic.png";
 export default function Cocktail() {
   return (
     <div className="mx-16 mb-20 mt-40 p-5">
-      <div className="relative z-10">
+      <div className="relative z-10 ">
         <h2 className=" font-ssort text-titlexl text-orangebase">Cocktail</h2>
       </div>
       <div className="flex gap-10  ">

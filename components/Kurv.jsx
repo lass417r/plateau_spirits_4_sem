@@ -42,16 +42,16 @@ const CartSlider = ({}) => {
                       <h3>
                         <a href={`/shop/${item.product.slug}`}> {item.product.name} </a>
                       </h3>
-                      <p className="ml-4">{item.price_total}</p>
+                      <p className="ml-4">{item.price_total} DKK</p>
                     </div>
                     <p className="text-sm mt-1 text-gray-500">{item.product.name}</p>
                   </div>
                   <div className="text-sm flex flex-1 items-end justify-between">
-                    <p className="text-gray-500">Qty {item.quantity}</p>
+                    <p className="text-gray-500">Antal: {item.quantity}</p>
 
                     <div className="flex">
                       <button onClick={() => removeItem(item.id)} className="font-tyk text-orangebase hover:text-red-950 disabled:cursor-not-allowed disabled:opacity-50">
-                        Remove
+                        Fjern product
                       </button>
                     </div>
                   </div>

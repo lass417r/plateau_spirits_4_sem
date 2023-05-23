@@ -27,12 +27,12 @@ const Product = ({ product }) => {
 
   return (
     <div className="container">
-      <div className=" lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
-        <div className="sticky top-36 aspect-[1/1] h-auto w-full md:mb-24">
-          <Image src={product.images[0].file.url} alt={product.name} fill className="  object-cover object-center"></Image>
+      <div className=" p-5 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+        <div className="sticky top-36 aspect-[1/1] h-auto w-full md:mb-16">
+          <Image src={product.images[1].file.url} alt={product.name} fill className="  object-cover object-center"></Image>
         </div>
         {/* Product info */}
-        <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-20">
+        <div className="px-4 sm:px-0 ">
           <h1 className="font-tyk text-wh1 text-blackbase">{product.name}</h1>
           <div>
             <div className="mt-3">
@@ -40,8 +40,8 @@ const Product = ({ product }) => {
             </div>
 
             <div className="mt-10">
-              <h5 className="font-tyk text-wh5 text-blackbase">Pris</h5>
-              <p className="font-copy text-copy text-blackbase">{product.price}</p>
+              <h6 className="font-tyk text-wh6 text-blackbase">Pris</h6>
+              <p className="font-copy text-copy text-blackbase">{product.price} DKK</p>
             </div>
 
             <form className="" onSubmit={handleSubmit}>

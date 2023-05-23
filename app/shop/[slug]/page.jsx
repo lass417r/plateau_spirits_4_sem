@@ -5,17 +5,17 @@ import ProductRecs from "./ProductRecs";
 
 export default async function productPage({ params }) {
   const product = await getProductBySlugOrId(params.slug);
-
+  const recs = [product.up_sells];
   return (
     <div>
       <section className=" mx-32">
         <Product product={product} />
       </section>
       <section className=" overflow-hidden bg-matte200">
-        <Cocktail />
+        <Cocktail product={product} />
       </section>
       <section className=" mx-32">
-        <ProductRecs />
+        <ProductRecs props={recs} />
       </section>
     </div>
   );

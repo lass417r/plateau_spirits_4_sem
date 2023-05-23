@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
         <Header2></Header2>
         <main>{children}</main>
 
-        <footer className="bg-matte200">
+        <footer className="overflow-hidden bg-matte200">
           <Footer></Footer>
         </footer>
       </body>

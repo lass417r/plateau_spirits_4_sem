@@ -2,12 +2,11 @@ const Historie = ({ product }) => {
   return (
     <div className="container md:mt-16">
       <div className=" lg:grid lg:items-start lg:gap-x-8">
-        <div className=" mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0"></div>
         {/* Product info */}
         <div className=" mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
           <h2 className="font-tyk text-wh2 text-blackbase">Historien </h2>
 
-          <div className="my-3 md:mb-24">
+          <div className="my-3 md:mb-16">
             <p className="font-copy text-copy text-blackbase">
               Efter en iskold svømmetur i en norsk sø, drak vi en flaske vodka og hørte historien om Bjørn - en mand, der fanger fisk med sine bare hænder under det spektakulære nordlys og presser
               kaviaren ud, før han sætter fisken tilbage i havet.
