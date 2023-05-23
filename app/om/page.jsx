@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import pic4 from "../../public/images/pic4.png";
 import pic5 from "../../public/images/pic5.png";
 import pic6 from "../../public/images/pic6.png";
-import pic7 from "../../public/images/pic7.png";
+import pic16 from "../../public/images/pic16.png";
 
 import deksel from "../../public/assets/deksel_skrift.svg";
 import buetekst from "../../public/assets/buetekst_2.svg";
@@ -28,7 +28,7 @@ export default function Om() {
 
           <motion.div className="relative inline-block self-end md:-mt-20" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
             <Image className="fotoinview absolute -left-32 top-48" src={buetekst} width={184} height={261} alt="Billede af ejerne" />
-            <Image className="fotoinview" src={pic7} width={450} height={550} alt="Billede af ejerne"></Image>
+            <Image className="fotoinview" src={pic16} width={450} height={550} alt="Billede af ejerne"></Image>
           </motion.div>
 
           <motion.div className="z-10 md:-mt-20" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>

@@ -21,21 +21,24 @@ export default function Events() {
         <div className="top-3 md:sticky md:basis-1/2">
           <div className="flex flex-col items-start gap-5 p-5">
            
-            <h1 className="font-tyk lg:mt-24 text-orangebase text-wh1">Events & Smagninger</h1>
+            <h1 className="font-tyk lg:mt-24  text-wh1">Events & Smagninger</h1>
             <p className="font-copy text-copy lg:max-w-[80%]">
-              Vi tilbyder muligheden for at afholde events og arrangementer i vores showroom i Kødbyen.
-              <br /> <br />
-              <ul className=" pl-6  list-disc">
-                <li>
+            Vi tilbyder muligheden for at afholde events og arrangementer i vores showroom i Kødbyen.
+            </p>
+          
+              <ul className=" pl-6 text-orangebase
+               font-megettyk text-wh6  list-disc">
+                <li className="mb-4 mt-4">
                   Virksomheds arrangementer
                 </li>
-                <li>
+                <li className="mb-4">
                 Private arrangementer
                 </li>
-                <li>
-                  Foredrag
+                <li className="mb-4">
+                  Foredrag m.m.
                 </li>
               </ul>
+              <p className="font-copy text-copy lg:max-w-[80%]">
               <br />
               Vores lokaler er velegnede til både private og erhvervsmæssige
               arrangementer, hvor I kan nyde vores unikke spiritus produkter
@@ -66,13 +69,9 @@ export default function Events() {
           <Image className="" src={pic15} width={500} height={500} alt="Billede af lokation" />
         </motion.div>
         <div className="lg:max-w-[80%]">
-          <h3 className="font-tyk text-wh3">Typer af events</h3>
+          <h3 className="font-tyk text-wh3">Eksempel på et event</h3>
           <p className="lg:max-w-[80%] font-copy">
-            <br />
-            Vi tilbyder forskellige typer af events, og er altid fleksible for at imødekomme jeres ønsker.
-            <br />
-            <br />
-            Her ses et bud på hvordan et event kan struktureres i vores showroom.
+             <span className="font-tyk"> Her ses et bud på hvordan et event kan struktureres i vores showroom.</span>
             <br />
             <br />
             Arrangementet starter med velkomstdrinks og en introduktion til programmet. Derefter er der en rundvisning i vores showroom og en gennemgang af destillationsprocessen.

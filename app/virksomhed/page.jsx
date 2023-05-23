@@ -3,11 +3,14 @@ import Button from "../../components/Button";
 
 import filler from "../../public/images/gorilla.png";
 import pic13 from "../../public/images/pic13.png";
+import personligt from "../../public/images/personligt.svg";
+import uniksmag from "../../public/images/uniksmag.svg";
+import kodby from "../../public/images/kodby.svg";
 
 export default function Shop() {
   return (
     <>
-      <section className="flex flex-col p-5 md:mx-20 md:mt-5 md:flex-row">
+      <section className="flex flex-col p-5 md:mx-20 lg:mt-2 md:flex-row">
         <div className="basis-1/2 ">
           <Image
             className="fotoinview z-0 -mt-20 pl-11"
@@ -28,16 +31,70 @@ export default function Shop() {
           </div>
         </div>
       </section>
+      <section className=" px-36 py-24 bg-clay ">
+    <h2 className="font-tyk text-center  text-wh2">Hvorfor Plateau Spirits?</h2>
+    <div className="lg:flex  flex-col lg:flex-row justify-between ">
+        <div className="flex justify-center flex-col">
+          <div className="flex justify-center p-10">
+          <Image
+            className=""
+            src={personligt}
+            width={80}
+            height={80}
+            alt="Billede af chartrøse"
+          />
+          </div>
+           <h3 className="  font-tyk text-wh4 flex justify-center lg:mb-8 lg:justify-center">
+          Personligt produkt
+           </h3>
+          <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">Med vores ekspertise og dedikation samarbejder vi tæt med kunder for at skabe skræddersyede produkter til jeres virksomhed.
+          </p>
+        </div>
+
+        <div className="flex justify-center flex-col">
+        <div className="flex justify-center p-[74px]">
+          <Image
+            className=""
+            src={uniksmag}
+            width={180}
+            height={180}
+            alt="Billede af chartrøse"
+          />
+          </div>
+           <h3 className="font-tyk text-wh4 flex text-center justify-center lg:mb-8 lg:justify-center">
+          Unik smagsoplevelse
+           </h3>
+          <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">Vi bruger traditionelle og utraditionelle ingredienser til at skabe den helt rigtige smag efter jeres ønske.
+          </p>
+        </div>
+        <div className="flex justify-center flex-col">
+        <div className="flex justify-center p-10">
+          <Image
+            className=""
+            src={kodby}
+            width={80}
+            height={80}
+            alt="Billede af chartrøse"
+          />
+          </div>
+           <h3 className="  font-tyk text-wh4 flex justify-center lg:mb-8 lg:justify-center">
+          Destilleret i Kødbyen
+           </h3>
+          <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">Fra vores destilleri i Kødbyen udvikler og destillerer vi alle vores produkter, og du er altid velkommen til at kigge forbi.
+          </p>
+        </div>
+        </div>
+      </section>
       <section className="my-10 flex flex-col items-center justify-center gap-10 p-5 md:mx-20 md:my-8 md:flex-row md:gap-20">
-        <div className="flex basis-1/2 lg:-mt-28 flex-col items-start gap-5">
-          <h2 className="font-tyk text-wh2 text-blackbase lg:max-w-[90%]">Hør om Gorilla’s oplevelse</h2>
-          <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">
+        <div className=" lg:mt-36">
+          <h2 className="font-tyk text-wh2 text-blackbase lg:-mt-32 lg:max-w-[100%]">Hør om Gorilla’s oplevelse</h2>
+          <p className="font-copy text-copy text-blackbase lg:mt-8 lg:max-w-[80%]">
             Vi havde fornøjelsen af at arbejde sammen med Plateau Spirits, da vi ønskede at få en unik chartreuse udviklet til vores restaurant. Vi tog kontakt til Tonny Svensson og forklarede vores
             ønsker og idéer til vores chartreuse. Tonny gjorde hvad han gør bedst og skabte den perfekte chartreuse til vores restaurant Gorilla. Det er nu blevet fast inventar i vores restaurant og
             vores gæster elsker, når vi serverer den for dem.
             <br />
           </p>
-          <p className="font-copy text-copy font-bold text-blackbase lg:max-w-[80%]">- Restaurantchef Gorilla, Hans Hansen</p>
+          <p className="font-copy text-copy font-bold lg:mt-7 text-blackbase lg:max-w-[80%]">- Restaurantchef Gorilla, Hans Hansen</p>
         </div>
         <div className="h-full w-full">
           <iframe
@@ -55,8 +112,10 @@ export default function Shop() {
         <div className="md:basis-1/2">
           <Image className="" src={pic13} width={800} height={100} alt="Billede af lokation" />
         </div>
-        <div className="flex flex-col items-start gap-5 md:basis-1/2">
-          <h2 className="font-tyk lg:-mt-20 text-wh2 text-blackbase">Events til din virksomhed</h2>
+        <div className="flex basis-1/2 flex-col items-start gap-5">
+          <h2 className="font-tyk text-wh2 text-blackbase">
+            Events til din virksomhed
+          </h2>
           <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">
             Vi afholder jævnligt gin-smagninger, foredrag og stiller anderledes mødelokaler til rådighed. Vi stræber efter at give jer en unik og mindeværdig oplevelse, der vil styrke jeres team og
             samarbejde. Kontakt os for at lære mere om vores skræddersyede events.
