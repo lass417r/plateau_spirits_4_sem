@@ -63,7 +63,7 @@ export default function Events() {
       </section>
       <section className="mb-10   flex flex-col items-start gap-20 p-5 md:mx-20 md:mb-20 md:flex-row">
         <motion.div className="flex basis-1/2 justify-end" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
-          <Image className="" src={pic9} width={500} height={500} alt="Billede af lokation" />
+          <Image className="" src={pic15} width={500} height={500} alt="Billede af lokation" />
         </motion.div>
         <div className="lg:max-w-[80%]">
           <h3 className="font-tyk text-wh3">Typer af events</h3>
