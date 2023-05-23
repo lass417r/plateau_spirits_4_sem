@@ -5,7 +5,7 @@ export default async function productPage({}) {
   const { results: products } = await getProducts({ page: 1 });
 
   return (
-    <div className="mx-32">
+    <div className="md:mx-32">
       <Products products={products} />{" "}
     </div>
   );

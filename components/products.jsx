@@ -5,11 +5,11 @@ import Button from "./Button";
 const Products = ({ products }) => {
   return (
     <div className="w-full py-24">
-      <div className="container">
+      <div className="container p-5">
         <h1 className="font-tyk text-wh1 text-blackbase">Plateau Shop</h1>
         <h6 className="font-tyk text-wh6 text-blackbase">Alle produkter</h6>
 
-        <div className="mt-20 grid grid-cols-3">
+        <div className="mt-20 flex flex-wrap items-center justify-center md:grid md:grid-cols-3">
           {products.map((product) => (
             <Link key={product.id} href={`/shop/${product.slug}`}>
               <div className="grid-col j grid  gap-2 p-5" key={product.id}>
