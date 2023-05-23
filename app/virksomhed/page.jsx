@@ -2,28 +2,28 @@ import Image from "next/image";
 import Button from "../../components/Button";
 
 import filler from "../../public/images/gorilla.png";
-import pic9 from "../../public/images/pic9.png";
+import pic13 from "../../public/images/pic13.png";
 
 export default function Shop() {
   return (
     <>
-      <section className="mx-20 flex md:mt-20">
+      <section className="mx-20 flex md:mt-5">
         <div className="basis-1/2 ">
           <Image
-            className="fotoinview z-0"
+            className="fotoinview z-0 -mt-20 pl-11"
             src={filler}
-            width={500}
-            height={500}
-            alt="Billede af ejerne"
+            width={800}
+            height={800}
+            alt="Billede af chartrøse"
           />
         </div>
         <div className="flex basis-1/2 flex-col items-start gap-5">
-          <h1 className="font-tyk text-wh1 text-blackbase lg:pt-20 ">
-            Designet til din virksomhed!
+          <h1 className="font-tyk text-wh1 text-blackbase lg:pt-72 ">
+            Designet til din <br /> virksomhed!
           </h1>
-          <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">
+          <p className="font-copy text-copy text-blackbase lg:max-w-[60%]">
             Vi tilbyder private label, til din virksomhed. Få dit navn på
-            flasken og server premium alkohol for dine gæste r. Vi har lavet
+            flasken og server premium alkohol for dine gæster. Vi har lavet
             private label for flere restauranter, hoteller samt andre
             virksomhedstyper.
           </p>
@@ -32,9 +32,9 @@ export default function Shop() {
           </div>
         </div>
       </section>
-      <section className="mx-20 flex items-center justify-center gap-20 md:mt-28">
-        <div className="flex basis-1/2 flex-col items-start gap-5">
-          <h2 className="font-tyk text-wh2 text-blackbase lg:max-w-[80%]">
+      <section className="mx-20 flex items-center justify-center gap-20 md:mt-8">
+        <div className="flex basis-1/2 lg:-mt-28 flex-col items-start gap-5">
+          <h2 className="font-tyk text-wh2 text-blackbase lg:max-w-[90%]">
             Hør om Gorilla’s oplevelse
           </h2>
           <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">
@@ -53,8 +53,8 @@ export default function Shop() {
         </div>
         <div className="basis-1/2">
           <iframe
-            width="560"
-            height="315"
+            width="800"
+            height="450"
             src="https://www.youtube.com/embed/HEUMrGoBeUs"
             title="YouTube video player"
             frameborder="0"
@@ -67,14 +67,14 @@ export default function Shop() {
         <div className="basis-1/2">
           <Image
             className=""
-            src={pic9}
-            width={500}
-            height={500}
+            src={pic13}
+            width={800}
+            height={100}
             alt="Billede af lokation"
           />
         </div>
         <div className="flex basis-1/2 flex-col items-start gap-5">
-          <h2 className="font-tyk text-wh2 text-blackbase">
+          <h2 className="font-tyk lg:-mt-20 text-wh2 text-blackbase">
             Events til din virksomhed
           </h2>
           <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">

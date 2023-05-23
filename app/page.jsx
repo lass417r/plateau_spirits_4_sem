@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <div className=" flex min-h-screen flex-col items-center justify-between">
-        <section className="z-10 ml-10 mr-10 flex w-full max-w-5xl items-center justify-between p-5 md:pt-20">
+        <section className="z-10 ml-10 mr-10 flex w-full max-w-6xl items-center justify-between md:pt-20">
           <div className="flex flex-col items-start gap-y-3">
             <h1 className="font-ssort text-wh1 text-black500">
               Small batch spiritus
@@ -31,8 +31,8 @@ export default function Home() {
           </div>
           <Image
             src={splash}
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             alt="Flot billede af Gin flaske"
           ></Image>
         </section>
@@ -58,9 +58,9 @@ export default function Home() {
 
         <section
           id="udvalgteProdukter"
-          className="  ml-10 mr-10 flex gap-5 p-5 pt-20"
+          className="  ml-10 mr-10 flex gap-5  p-5 pt-20"
         >
-          <div className=" flex basis-2/4 flex-col items-start gap-y-3">
+          <div className="flex basis-2/4 flex-col items-start gap-y-3">
             <h2 className="udvalgteProdukter font-ssort text-wh2">
               Udvalgte produkter
             </h2>
