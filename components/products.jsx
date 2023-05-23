@@ -9,7 +9,7 @@ const Products = ({ products }) => {
         <h1 className="font-tyk text-wh1 text-blackbase">Plateau Shop</h1>
         <h6 className="font-tyk text-wh6 text-blackbase">Alle produkter</h6>
 
-        <div className="mt-20 grid grid-cols-3 ">
+        <div className="mt-20 grid grid-cols-3">
           {products.map((product) => (
             <Link key={product.id} href={`/shop/${product.slug}`}>
               <div className="grid-col j grid  gap-2 p-5" key={product.id}>
