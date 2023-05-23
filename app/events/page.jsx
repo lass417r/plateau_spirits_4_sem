@@ -6,7 +6,7 @@ import TextBanner from "../../components/TextBanner";
 import KontaktEvents from "../../components/KontaktEvents";
 
 import pic8 from "../../public/images/pic8.png";
-import pic9 from "../../public/images/pic9.png";
+import pic15 from "../../public/images/pic15.png";
 import pic10 from "../../public/images/pic10.png";
 import pic11 from "../../public/images/pic11.png";
 
@@ -20,14 +20,24 @@ export default function Shop() {
       <section className="mx-20 flex min-h-screen flex-row items-start justify-between md:mb-20">
         <div className="sticky top-3 basis-1/2">
           <div className="flex flex-col items-start gap-5 p-5">
-            <h1 className="font-tyk text-wh1 text-orangebase">
-              Plateau Events{" "}
-            </h1>
-            <h2 className="font-tyk text-wh2">Events & Smagninger</h2>
+           
+            <h1 className="font-tyk lg:mt-24 text-orangebase text-wh1">Events & Smagninger</h1>
             <p className="font-copy text-copy lg:max-w-[80%]">
               Vi tilbyder muligheden for at afholde events og arrangementer i
               vores showroom i Kødbyen.
               <br /> <br />
+              <ul className=" pl-6  list-disc">
+                <li>
+                  Virksomheds arrangementer
+                </li>
+                <li>
+                Private arrangementer
+                </li>
+                <li>
+                  Foredrag
+                </li>
+              </ul>
+              <br />
               Vores lokaler er velegnede til både private og erhvervsmæssige
               arrangementer, hvor I kan nyde vores unikke spiritus produkter
               under arrangementet. Vi tilpasser gerne arrangementet til jeres
@@ -94,7 +104,7 @@ export default function Shop() {
           </motion.div>
         </div>
       </section>
-      <section className="mx-20 mt-32 flex flex-row items-start gap-20 md:mb-20">
+      <section className="mx-20 lg:pl-32 flex items-center justify-center gap-20 md:my-28">
         <motion.div
           className="flex basis-1/2 justify-end"
           initial={{ opacity: 0.2 }}
@@ -102,15 +112,15 @@ export default function Shop() {
         >
           <Image
             className=""
-            src={pic9}
-            width={500}
-            height={500}
+            src={pic15}
+            width={800}
+            height={200}
             alt="Billede af lokation"
           />
         </motion.div>
-        <div className="basis-1/2 lg:max-w-[80%]">
+        <div className="lg:max-w-[80%]">
           <h3 className="font-tyk text-wh3">Typer af events</h3>
-          <p className="lg:max-w-[80%]">
+          <p className="lg:max-w-[80%] font-copy">
             <br />
             Vi tilbyder forskellige typer af events, og er altid fleksible for
             at imødekomme jeres ønsker.
