@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       cursor: {
@@ -51,7 +55,7 @@ module.exports = {
       titlem: ["7.43rem", { lineHeight: "125%" }],
       titlexl: ["15.6rem", { lineHeight: "125%" }],
       lcopy: ["1.2rem", { lineHeight: "125%" }],
-      copy: ["1rem", { lineHeight: "125%" }],
+      copy: ["1.125rem", { lineHeight: "125%" }],
       scopy: ["0.833rem", { lineHeight: "125%" }],
       xscopy: ["0.694rem", { lineHeight: "125%" }],
       deskButtonPrimary: ["1.625rem", { lineHeight: "1.663rem" }],

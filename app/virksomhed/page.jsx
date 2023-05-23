@@ -1,34 +1,54 @@
 import Image from "next/image";
 import Button from "../../components/Button";
 
-import filler from "../../public/images/splash_filler.png";
+import filler from "../../public/images/gorilla.png";
+import pic9 from "../../public/images/pic9.png";
 
 export default function Shop() {
   return (
     <>
       <section className="mx-20 flex md:mt-20">
-        <div className="basis-1/2">
-          <Image className="fotoinview z-0" src={filler} width={500} height={500} alt="Billede af ejerne" />
+        <div className="basis-1/2 ">
+          <Image
+            className="fotoinview z-0"
+            src={filler}
+            width={500}
+            height={500}
+            alt="Billede af ejerne"
+          />
         </div>
         <div className="flex basis-1/2 flex-col items-start gap-5">
-          <h1 className="font-tyk text-wh1 text-blackbase">Designet til din virksomhed!</h1>
-          <p className="font-copy text-copy text-blackbase">
-            Vi tilbyder private label, til din virksomhed. Få dit navn på flasken og server premium alkohol for dine gæste r. Vi har lavet private label for flere restauranter, hoteller samt andre
+          <h1 className="font-tyk text-wh1 text-blackbase lg:pt-20 ">
+            Designet til din virksomhed!
+          </h1>
+          <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">
+            Vi tilbyder private label, til din virksomhed. Få dit navn på
+            flasken og server premium alkohol for dine gæste r. Vi har lavet
+            private label for flere restauranter, hoteller samt andre
             virksomhedstyper.
           </p>
-          <Button href="/kontakt" text="Kontakt os"></Button>
+          <div className="pt-6">
+            <Button href="/kontakt" text="Kontakt os"></Button>
+          </div>
         </div>
       </section>
       <section className="mx-20 flex items-center justify-center gap-20 md:mt-28">
         <div className="flex basis-1/2 flex-col items-start gap-5">
-          <h2 className="font-tyk text-wh1 text-blackbase">Hør om Gorilla’s oplevelse</h2>
-          <p className="font-copy text-copy text-blackbase">
-            Vi havde fornøjelsen af at arbejde sammen med Plateau Spirits, da vi ønskede at få en unik chartreuse udviklet til vores restaurant. Vi tog kontakt til Tonny Svensson og forklarede vores
-            ønsker og idéer til vores chartreuse. Tonny gjorde hvad han gør bedst og skabte den perfekte chartreuse til vores restaurant Gorilla. Det er nu blevet fast inventar i vores restaurant og
-            vores gæster elsker, når vi serverer den for dem.
+          <h2 className="font-tyk text-wh2 text-blackbase lg:max-w-[80%]">
+            Hør om Gorilla’s oplevelse
+          </h2>
+          <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">
+            Vi havde fornøjelsen af at arbejde sammen med Plateau Spirits, da vi
+            ønskede at få en unik chartreuse udviklet til vores restaurant. Vi
+            tog kontakt til Tonny Svensson og forklarede vores ønsker og idéer
+            til vores chartreuse. Tonny gjorde hvad han gør bedst og skabte den
+            perfekte chartreuse til vores restaurant Gorilla. Det er nu blevet
+            fast inventar i vores restaurant og vores gæster elsker, når vi
+            serverer den for dem.
             <br />
-            <br />
-            Restaurantchef Gorilla, Hans Hansen
+          </p>
+          <p className="font-copy text-copy font-bold text-blackbase lg:max-w-[80%]">
+            - Restaurantchef Gorilla, Hans Hansen
           </p>
         </div>
         <div className="basis-1/2">
@@ -45,15 +65,27 @@ export default function Shop() {
       </section>
       <section className="mx-20 flex items-center justify-center gap-20 md:my-28">
         <div className="basis-1/2">
-          <Image className="fotoinview z-0" src={filler} width={500} height={500} alt="Billede af ejerne" />
+          <Image
+            className=""
+            src={pic9}
+            width={500}
+            height={500}
+            alt="Billede af lokation"
+          />
         </div>
         <div className="flex basis-1/2 flex-col items-start gap-5">
-          <h2 className="font-tyk text-wh1 text-blackbase">Events til din virksomhed</h2>
-          <p className="font-copy text-copy text-blackbase">
-            Vi afholder jævnligt gin-smagninger, foredrag og stiller anderledes mødelokaler til rådighed. Vi stræber efter at give jer en unik og mindeværdig oplevelse, der vil styrke jeres team og
-            samarbejde. Kontakt os for at lære mere om vores skræddersyede events.
+          <h2 className="font-tyk text-wh2 text-blackbase">
+            Events til din virksomhed
+          </h2>
+          <p className="font-copy text-copy text-blackbase lg:max-w-[80%]">
+            Vi afholder jævnligt gin-smagninger, foredrag og stiller anderledes
+            mødelokaler til rådighed. Vi stræber efter at give jer en unik og
+            mindeværdig oplevelse, der vil styrke jeres team og samarbejde.
+            Kontakt os for at lære mere om vores skræddersyede events.
           </p>
-          <Button href="/events" text="Events"></Button>
+          <div className="pt-6">
+            <Button href="/events" text="Events"></Button>
+          </div>
         </div>
       </section>
     </>
