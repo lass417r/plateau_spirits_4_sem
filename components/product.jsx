@@ -4,7 +4,6 @@ import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useSWRConfig } from "swr";
-
 import { addToCart } from "@/lib/swell/cart";
 
 const Product = ({ product }) => {
@@ -13,6 +12,7 @@ const Product = ({ product }) => {
   const [isPending, startTransition] = useTransition();
   const [quantity, setQuantity] = useState(1);
 
+  // AddToCart
   const handleSubmit = async (event) => {
     event.preventDefault();
     await addToCart({
