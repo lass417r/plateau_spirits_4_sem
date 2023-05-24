@@ -3,6 +3,7 @@ import ProductShop from "./productShop";
 
 const Products = ({ products }) => {
   // console.log(products[4].attributes.historie);
+  console.log(products);
 
   return (
     <div className="w-full py-5 md:py-24">

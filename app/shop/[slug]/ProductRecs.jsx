@@ -5,8 +5,6 @@ import Button from "../../../components/Button";
 import ginpic from "../../../public/images/Asset17.png";
 
 function ProductRecs(props) {
-  console.log(props);
-
   return (
     <div className="my-16">
       <div className="md:mb-6">
