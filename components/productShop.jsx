@@ -11,7 +11,7 @@ const ProductShop = ({ product }) => {
   return product.price === 500 ? (
     <div className=" grid  gap-2 p-5 md:col-span-2" key={product.id}>
       <Link className="" key={product.id} href={`/shop/${product.slug}`}>
-        <div className="relative flex aspect-[1/1]  h-full w-full">
+        <div className="relative flex aspect-[2/1]  h-full w-full">
           <motion.div
             className="absolute  h-full w-full object-cover object-center"
             initial={{ opacity: 1 }}
