@@ -2,7 +2,7 @@ import Image from "next/image";
 import cocktailpic from "../../../public/images/cocktailpic.png";
 export default function Cocktail() {
   return (
-    <div className="mx-16 mb-20 mt-40 p-5">
+    <div className="mx-16  mt-40 p-5">
       <div className="relative z-10 ">
         <h2 className=" font-ssort text-titlexl text-orangebase">Cocktail</h2>
       </div>
@@ -31,7 +31,7 @@ export default function Cocktail() {
             <li>Isterninger</li>
           </div>
         </div>
-        <div className="relative -right-24 -top-28 z-0 flex aspect-[1/1] h-auto w-full basis-2/3 flex-col gap-3  md:mb-24">
+        <div className="relative -right-24 -top-28 z-0 flex aspect-[1/1] h-auto w-full basis-2/3 flex-col gap-3  ">
           <Image src={cocktailpic} alt="billede af cocktail" fill className="object-cover object-center"></Image>
         </div>
       </div>
