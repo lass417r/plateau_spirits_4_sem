@@ -10,18 +10,18 @@ import kodby from "../../public/images/kodby.svg";
 export default function Shop() {
   return (
     <>
-      <section className="flex flex-col p-5 md:mx-20 lg:mt-2 md:flex-row">
-        <div className="basis-1/2 ">
+      <section className="flex flex-col p-5 md:mx-20 lg:-mt-44 lg:flex-row">
+        <div className="basis-1/2">
           <Image
-            className="fotoinview z-0 -mt-20 pl-11"
+            className="z-0 shrink-0"
             src={filler}
-            width={800}
-            height={800}
+            width={700}
+            height={700}
             alt="Billede af chartrøse"
           />
         </div>
-        <div className="flex basis-1/2 flex-col items-start gap-5 ">
-          <h1 className="font-tyk text-wh1 text-blackbase lg:pt-72 ">Designet til din <br /> virksomhed!</h1>
+        <div className="flex m-12 basis-1/2 flex-col items-start gap-5 ">
+          <h1 className="font-tyk text-wh4 lg:text-wh1 text-blackbase lg:pt-72 ">Designet til din <br /> virksomhed!</h1>
           <p className="font-copy text-copy text-blackbase lg:max-w-[60%]">
             Vi tilbyder private label, til din virksomhed. Få dit navn på flasken og server premium alkohol for dine gæster. Vi har lavet private label for flere restauranter, hoteller samt andre
             virksomhedstyper.
@@ -31,8 +31,8 @@ export default function Shop() {
           </div>
         </div>
       </section>
-      <section className=" px-36 py-24 bg-clay ">
-    <h2 className="font-tyk text-center  text-wh2">Hvorfor Plateau Spirits?</h2>
+      <section className=" lg:px-36 lg:py-24 p-12 bg-clay ">
+    <h2 className="font-tyk text-center text-wh4  lg:text-wh2">Hvorfor Plateau Spirits?</h2>
     <div className="lg:flex  flex-col lg:flex-row justify-between ">
         <div className="flex justify-center flex-col">
           <div className="flex justify-center p-10">
@@ -44,7 +44,7 @@ export default function Shop() {
             alt="Billede af chartrøse"
           />
           </div>
-           <h3 className="  font-tyk text-wh4 flex justify-center lg:mb-8 lg:justify-center">
+           <h3 className="  font-tyk text-wh4 text-center flex justify-center lg:mb-8 lg:justify-center">
           Personligt produkt
            </h3>
           <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">Med vores ekspertise og dedikation samarbejder vi tæt med kunder for at skabe skræddersyede produkter til jeres virksomhed.
@@ -77,7 +77,7 @@ export default function Shop() {
             alt="Billede af chartrøse"
           />
           </div>
-           <h3 className="  font-tyk text-wh4 flex justify-center lg:mb-8 lg:justify-center">
+           <h3 className=" text-center font-tyk text-wh4 flex justify-center lg:mb-8 lg:justify-center">
           Destilleret i Kødbyen
            </h3>
           <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">Fra vores destilleri i Kødbyen udvikler og destillerer vi alle vores produkter, og du er altid velkommen til at kigge forbi.
@@ -85,9 +85,9 @@ export default function Shop() {
         </div>
         </div>
       </section>
-      <section className="my-10 flex flex-col items-center justify-center gap-10 p-5 md:mx-20 md:my-8 md:flex-row md:gap-20">
+      <section className="my-10 items-center justify-center gap-10 p-5 md:mx-20 lg:flex md:my-8 lg:flex-row md:gap-20">
         <div className=" lg:mt-36">
-          <h2 className="font-tyk text-wh2 text-blackbase lg:-mt-32 lg:max-w-[100%]">Hør om Gorilla’s oplevelse</h2>
+          <h2 className="font-tyk lg:text-wh2 text-wh4 text-blackbase lg:-mt-32 lg:max-w-[100%]">Hør om Gorilla’s oplevelse</h2>
           <p className="font-copy text-copy text-blackbase lg:mt-8 lg:max-w-[80%]">
             Vi havde fornøjelsen af at arbejde sammen med Plateau Spirits, da vi ønskede at få en unik chartreuse udviklet til vores restaurant. Vi tog kontakt til Tonny Svensson og forklarede vores
             ønsker og idéer til vores chartreuse. Tonny gjorde hvad han gør bedst og skabte den perfekte chartreuse til vores restaurant Gorilla. Det er nu blevet fast inventar i vores restaurant og
@@ -97,9 +97,9 @@ export default function Shop() {
           <p className="font-copy text-copy font-bold lg:mt-7 text-blackbase lg:max-w-[80%]">- Restaurantchef Gorilla, Hans Hansen</p>
         </div>
         <div className="h-full w-full">
-          <iframe
-            width="800"
-            height="450"
+          <iframe className="lg:w-[800px] lg:h-[450px]"
+            width="350"
+            height="200"
             src="https://www.youtube.com/embed/HEUMrGoBeUs"
             title="YouTube video player"
             frameborder="0"

@@ -144,19 +144,10 @@ export default function Events() {
         <div className="z w-full">
           <TextBanner text="BOOK DIT NÆSTE EVENT! &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!  &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!"></TextBanner>
         </div>
-        <div className=" mb-10 flex">
+        <div className=" mb-10 ">
           <div className="kontaktformular  flex flex-col gap-5 md:mx-20 md:my-20 md:basis-2/3">
             <h3 className="font-tyk text-wh3 text-yellowbase ">Book her</h3>
             <KontaktEvents className="z-10"></KontaktEvents>
-          </div>
-          <div className="overflow-hidden">
-            <Image
-              className="hidden basis-1/3 md:block"
-              src={events}
-              alt="Illustrativt element"
-              width={400}
-              height={400}
-            ></Image>
           </div>
         </div>
       </section>
