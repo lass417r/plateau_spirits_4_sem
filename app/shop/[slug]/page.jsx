@@ -8,13 +8,13 @@ export default async function productPage({ params }) {
   const recs = [product.up_sells];
   return (
     <div>
-      <section className=" mx-32">
+      <section className=" md:mx-32">
         <Product product={product} />
       </section>
       <section className=" overflow-hidden bg-matte200">
         <Cocktail product={product} />
       </section>
-      <section className=" mx-32">
+      <section className=" md:mx-32">
         <ProductRecs props={recs} />
       </section>
     </div>

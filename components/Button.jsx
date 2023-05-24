@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Button({ href, text }) {
   return (
-    <Link href={href} className="voresKnap px-5 py-3 border-2 border-black400  bg-white100 text-black400 text-deskButtonPrimary tracking-wider font-ssort">
+    <Link href={href} className="voresKnap border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-black400 md:text-deskButtonPrimary md:tracking-wider">
       {text}
     </Link>
   );

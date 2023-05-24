@@ -4,6 +4,8 @@ import { EB_Garamond } from "next/font/google";
 import Header2 from "../components/Header2";
 import Footer from "../components/Footer";
 import TopBanner from "@/components/TopBanner";
+import Head from "next/head";
+
 const ebGaramond = EB_Garamond({
   weight: "400",
   style: "normal",
@@ -58,6 +60,9 @@ export default function RootLayout({ children }) {
       lang="da"
       className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable} ${ebGaramond.variable} scroll-smooth antialiased`}
     >
+      <Head>
+        <link rel="icon" href="../public/assets/favicon.svg" />
+      </Head>
       <body className="bg-greybase">
         <TopBanner></TopBanner>
         <Header2></Header2>

@@ -51,7 +51,7 @@ const CartSlider = ({}) => {
 
                     <div className="flex">
                       <button onClick={() => removeItem(item.id)} className="font-tyk text-orangebase hover:text-red-950 disabled:cursor-not-allowed disabled:opacity-50">
-                        Fjern product
+                        Fjern produkt
                       </button>
                     </div>
                   </div>
