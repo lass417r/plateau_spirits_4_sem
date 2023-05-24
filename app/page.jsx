@@ -60,7 +60,7 @@ export default function Home() {
           id="udvalgteProdukter"
           className="  ml-10 mr-10 flex gap-5  p-5 pt-20"
         >
-          <div className="flex basis-2/4 flex-col items-start gap-y-3">
+          <div className=" ml-20 flex basis-2/4 flex-col items-start gap-y-3">
             <h2 className="udvalgteProdukter font-ssort text-wh2">
               Udvalgte produkter
             </h2>
@@ -122,7 +122,7 @@ export default function Home() {
 
         <section className="ml-10 mr-10 flex flex-row items-center justify-center gap-5 gap-y-3 p-5 pb-20 pt-20">
           <div className=" flex basis-1/2 flex-col items-start gap-y-3">
-            <h2 className="font-ssort text-wh2">Chartreuse til Gorilla Bar</h2>
+            <h2 className="font-ssort text-wh2">"Chartrøse" til Gorilla</h2>
             <p className="font-copy text-copy lg:max-w-[80%]">
               Vi har samarbejdet med restaurant Gorilla om at udvikle en unik
               fransk inspireret likør de kan servere til deres gæster. Vi blev
