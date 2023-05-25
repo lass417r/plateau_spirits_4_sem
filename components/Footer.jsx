@@ -7,14 +7,20 @@ function Footer() {
   return (
     <div>
       <div className="">
-        <Image alt="Billede af lokation i Kødbyen" src={footerpic} width={1512} height={765} className="w-full object-cover"></Image>
+        <Image
+          alt="Billede af lokation i Kødbyen"
+          src={footerpic}
+          width={1512}
+          height={765}
+          className="w-full object-cover"
+        ></Image>
       </div>
       <div className="flex pb-10 pt-10">
         <div className="flex basis-2/5 justify-evenly">
           <Image src={logohvid} width={217} height={271} alt="Logo"></Image>
         </div>
         <div className="links flex basis-1/5 flex-col items-start gap-2">
-          <h6 className="font-megettyk text-wh6 text-yellowbase">Links</h6>
+          <h6 className="font-megettyk text-wh6 text-yellowbase">Sider</h6>
           <Link className="font-copy text-copy text-yellowbase" href="/shop">
             &rarr; Shop
           </Link>
@@ -24,7 +30,10 @@ function Footer() {
           <Link className="font-copy text-copy text-yellowbase" href="/events">
             &rarr; Events
           </Link>
-          <Link className="font-copy text-copy text-yellowbase" href="/virksomhed">
+          <Link
+            className="font-copy text-copy text-yellowbase"
+            href="/virksomhed"
+          >
             &rarr; Virksomhed
           </Link>
           <Link className="font-copy text-copy text-yellowbase" href="/kontakt">
@@ -39,13 +48,20 @@ function Footer() {
           </p>
           <div>
             <p className="font-tyk text-copy text-yellowbase">Mail</p>
-            <Link className="font-copy text-copy text-yellowbase" target="_blank" href="mailto:info@plateauspirits.com">
+            <Link
+              className="font-copy text-copy text-yellowbase"
+              target="_blank"
+              href="mailto:info@plateauspirits.com"
+            >
               Info@plateauspirits.com
             </Link>
           </div>
           <div>
             <p className="font-tyk text-copy text-yellowbase">Telefon</p>
-            <Link className="font-copy text-copy text-yellowbase" href="tel:+4522422020">
+            <Link
+              className="font-copy text-copy text-yellowbase"
+              href="tel:+4522422020"
+            >
               +45 22 42 20 20
             </Link>
           </div>

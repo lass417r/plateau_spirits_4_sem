@@ -13,6 +13,7 @@ export default function Shop() {
     <>
       <section className="mx-20 mt-16 flex gap-20">
         <div className="h-[400px] basis-2/3">
+          {/* Virker ikke korrekt */}
           <GoogleMap location="Flæsketorvet 6, 1711 København" />
         </div>
 
@@ -25,47 +26,33 @@ export default function Shop() {
           </p>
         </div>
       </section>
-      <section className=" px-24 py-24 bg-clay ">
-    <h2 className="font-tyk text-center  text-wh2">Kontakt information</h2>
-    <div className="lg:flex  flex-col lg:flex-row justify-between ">
-        <div className="flex justify-center flex-col">
-          <div className="flex justify-center p-10">
+      <section className=" bg-clay px-24 py-24 ">
+        <h2 className="text-center font-tyk  text-wh2">Kontakt information</h2>
+        <div className="flex-col  justify-between lg:flex lg:flex-row ">
+          <div className="flex flex-col justify-center">
+            <div className="flex justify-center p-10"></div>
+            <h3 className="  flex justify-center font-tyk text-wh4 lg:mb-8 lg:justify-center">Mail</h3>
+            <p className="flex justify-center text-center font-copy text-copy lg:w-80 lg:justify-center">Info@plateauspirits.com</p>
           </div>
-           <h3 className="  font-tyk text-wh4 flex justify-center lg:mb-8 lg:justify-center">
-         Mail
-           </h3>
-          <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">Info@plateauspirits.com
-          </p>
-        </div>
 
-        <div className="flex justify-center flex-col">
-        <div className="flex justify-center p-10">
-         
+          <div className="flex flex-col justify-center">
+            <div className="flex justify-center p-10"></div>
+            <h3 className="flex justify-center text-center font-tyk text-wh4 lg:mb-8 lg:justify-center">Telefon</h3>
+            <p className="flex justify-center text-center font-copy text-copy lg:w-80 lg:justify-center">+45 22 42 20 20</p>
           </div>
-           <h3 className="font-tyk text-wh4 flex text-center justify-center lg:mb-8 lg:justify-center">
-          Telefon
-           </h3>
-          <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">+45 22 42 20 20
-          </p>
-        </div>
-        <div className="flex justify-center flex-col">
-        <div className="flex justify-center p-10">
-          
+          <div className="flex flex-col justify-center">
+            <div className="flex justify-center p-10"></div>
+            <h3 className="  flex justify-center font-tyk text-wh4 lg:mb-8 lg:justify-center">Adresse</h3>
+            <p className="flex justify-center text-center font-copy text-copy lg:w-80 lg:justify-center">Flæsketorvet 6, 1711 København</p>
           </div>
-           <h3 className="  font-tyk text-wh4 flex justify-center lg:mb-8 lg:justify-center">
-          Adresse
-           </h3>
-          <p className="font-copy flex justify-center lg:justify-center text-center text-copy lg:w-80">Flæsketorvet 6, 1711 København
-          </p>
-        </div>
         </div>
       </section>
       <section className="">
-        <div className="flex p-7 justify-center">
+        <div className="flex justify-center p-7">
           <div className="flex-col justify-center">
-          <h2 className="font-tyk text-wh1 text-blackbase">Kontaktformular</h2>
-          <Kontakt></Kontakt>   
-          {/* <Image src={deksel} width={442} height={439} alt="Dekorativ illustration"></Image> */}
+            <h2 className="font-tyk text-wh1 text-blackbase">Kontaktformular</h2>
+            <Kontakt></Kontakt>
+            {/* <Image src={deksel} width={442} height={439} alt="Dekorativ illustration"></Image> */}
           </div>
         </div>
       </section>

@@ -20,14 +20,14 @@ export default function Events() {
       <section className="flex min-h-screen flex-col items-start justify-between md:mx-20 md:mb-20 md:flex-row">
         <div className="top-3 md:sticky md:basis-1/2">
           <div className="flex flex-col items-start gap-5 p-5">
-            <h1 className="font-tyk text-wh1  lg:mt-24">Events & Smagninger</h1>
+            <h1 className="font-tyk text-wh1  lg:mt-24">Plateau Events</h1>
             <p className="font-copy text-copy lg:max-w-[80%]">Vi tilbyder muligheden for at afholde events og arrangementer i vores showroom i Kødbyen.</p>
 
             <ul
               className=" list-disc pl-6
                font-megettyk text-wh6  text-orangebase"
             >
-              <li className="mb-4 mt-4">Virksomheds arrangementer</li>
+              <li className="mb-4 mt-4">Virksomhedsarrangementer</li>
               <li className="mb-4">Private arrangementer</li>
               <li className="mb-4">Foredrag m.m.</li>
             </ul>
@@ -36,6 +36,7 @@ export default function Events() {
               Vores lokaler er velegnede til både private og erhvervsmæssige arrangementer, hvor I kan nyde vores unikke spiritus produkter under arrangementet. Vi tilpasser gerne arrangementet til
               jeres ønsker og behov og tilbyder også muligheden for at inkludere en rundvisning i vores destilleri og en præsentation af destillationsprocessen.
             </p>
+            {/* Virker ikke korrekt, skal gå ned af siden */}
             <Button href="/shop" text="Book Event"></Button>
           </div>
         </div>

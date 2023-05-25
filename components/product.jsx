@@ -24,15 +24,17 @@ const Product = ({ product }) => {
       router.refresh();
     });
   };
-
+  //   <div className="relative z-0 mt-8 aspect-[1/1]  h-auto w-full md:-right-24 md:-top-28 md:flex md:basis-2/3 md:flex-col md:gap-3  ">
+  //   <Image src={cocktailpic} alt="billede af cocktail" fill className="object-cover object-center"></Image>
+  // </div>
   return (
     <div className="container">
-      <div className=" p-5 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
-        <div className="sticky top-36 aspect-[1/1] h-auto w-full md:mb-16">
+      <div className=" flex flex-col gap-10 p-5 md:grid md:grid-cols-2 md:items-start md:gap-x-8">
+        <div className="relative flex aspect-[1/1] md:sticky  md:top-36  md:mb-16">
           <Image src={product.images[1].file.url} alt={product.name} fill className="  object-cover object-center"></Image>
         </div>
         {/* Product info */}
-        <div className="px-4 sm:px-0 ">
+        <div className="sm:px-0 md:px-4 ">
           <h1 className="font-tyk text-wh1 text-blackbase">{product.name}</h1>
           <div>
             <div className="mt-3">
@@ -45,9 +47,9 @@ const Product = ({ product }) => {
             </div>
 
             <form className="" onSubmit={handleSubmit}>
-              <div className="sm:flex-col1 start-0 mt-10 flex items-start gap-10">
+              <div className=" start-0 mt-10 flex items-stretch gap-10">
                 <input
-                  className=" border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-deskButtonPrimary  text-black400 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="h-full border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-deskButtonPrimary  text-black400 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={(e) => setQuantity(e.target.value)}
                   value={quantity}
                   type="number"
@@ -58,7 +60,7 @@ const Product = ({ product }) => {
                 ></input>
                 <button
                   type="submit"
-                  className="voresKnap border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-deskButtonPrimary  text-black400 disabled:cursor-not-allowed disabled:opacity-50  sm:w-full"
+                  className="voresKnap h-full border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-deskButtonPrimary  text-black400 disabled:cursor-not-allowed disabled:opacity-50  sm:w-full"
                 >
                   Add to Cart
                 </button>
