@@ -26,7 +26,7 @@ const CartSlider = ({}) => {
 
   return (
     <div className="">
-      <hr class="border-1 border border-orangebase" />
+      <hr class=" border border-orangebase" />
       <div className="mt-8 flow-root">
         <ul role="list" className="-my-6 divide-y divide-gray-200">
           {cart?.items?.length > 0 &&
@@ -59,7 +59,7 @@ const CartSlider = ({}) => {
               </li>
             ))}
         </ul>
-        <hr class="border-1 mt-8 border border-orangebase" />
+        <hr class=" mt-8 border border-orangebase" />
       </div>
       <div>
         <div className="border-t border-gray-200  py-6 sm:px-6">
