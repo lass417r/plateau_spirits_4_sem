@@ -4,7 +4,7 @@ const Historie = ({ product }) => {
       <div className=" lg:grid lg:items-start lg:gap-x-8">
         {/* Product info */}
         <div className=" mt-10  sm:mt-16 sm:px-0 lg:mt-0">
-          <h2 className="font-tyk text-wh2 text-blackbase">Historien </h2>
+          <h2 className="font-tyk text-mobileH2 text-blackbase md:text-wh2">Historien </h2>
 
           <div className="my-3 md:mb-16">
             <p className="font-copy text-copy text-blackbase">
