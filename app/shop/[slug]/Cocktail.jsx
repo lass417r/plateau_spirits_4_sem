@@ -1,6 +1,6 @@
 import Image from "next/image";
 import cocktailpic from "../../../public/images/cocktailpic.png";
-export default function Cocktail() {
+export default function Cocktail({ product }) {
   return (
     <div className="mt-5 p-5 md:mx-16 md:mt-40">
       <div className="relative z-10 ">

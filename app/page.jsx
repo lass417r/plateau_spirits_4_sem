@@ -37,7 +37,7 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col gap-5 p-6 pt-20 md:mx-20 md:flex-row">
-          <div lassName="  flex basis-1/3 flex-col gap-3 flex-initial w-10">
+          <div className="  flex w-10 flex-initial basis-1/3 flex-col gap-3">
             <h2 className=" font-ssort text-mobileH2 md:text-wh2">Udvalgte produkter</h2>
             <p className=" font-copy text-copy ">
               Vores produkter er skabt med en passion for æstetik og håndværk, og vi tror på at give vores kunder en autentisk og inspirerende oplevelse. Hver eneste genstand er nøje fremstillet af
