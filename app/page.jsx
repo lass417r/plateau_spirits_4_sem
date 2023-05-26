@@ -10,8 +10,8 @@ import buetekst from "../public/assets/buetekst.svg";
 import tilgang from "../public/assets/vores_tilgang.svg";
 
 import splash from "../public/images/splash.png";
-import vodka from "../public/images/Group196.png";
-import gin from "../public/images/Asset17.png";
+import gtranq from "../public/images/gtranq.png";
+import gluna from "../public/images/gluna.png";
 import pic1 from "../public/images/pic1.png";
 import pic2 from "../public/images/pic2.png";
 
@@ -37,9 +37,9 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col gap-5 p-6 pt-20 md:mx-20 md:flex-row">
-          <div className="  flex w-10 flex-initial basis-1/3 flex-col gap-3">
+          <div className="  flex  flex-initial basis-1/3 flex-col gap-3">
             <h2 className=" font-ssort text-mobileH2 md:text-wh2">Udvalgte produkter</h2>
-            <p className=" font-copy text-copy ">
+            <p className="  font-copy text-copy">
               Vores produkter er skabt med en passion for æstetik og håndværk, og vi tror på at give vores kunder en autentisk og inspirerende oplevelse. Hver eneste genstand er nøje fremstillet af
               vores master distiller, der lægger sjæl og passion i hvert eneste trin af processen.
             </p>
@@ -48,26 +48,30 @@ export default function Home() {
             </div>
           </div>
           <div className="flex basis-2/3 flex-row items-baseline gap-5">
-            <div className="flex basis-1/2 flex-col gap-2 ">
-              <Image className="hover:cursor-mincursor" src={vodka} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-              <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">Roÿe Vodka</h5>
-              <p className="font-copy text-copy  font-semibold">3.200 DKK</p>
-              <p className="font-copy text-copy">Vodka med arktisk kaviar. Begrænset mængde af 100 nummererede flasker.</p>
+            <div className="flex basis-1/2 flex-col gap-2 break-normal">
+              <Link href={"/shop/roye-vodka"}>
+                <Image className="hover:cursor-mincursor" src={gluna} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
+
+                <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">La Luna Absint</h5>
+              </Link>
+              <p className="font-copy text-copy  font-semibold">445 DKK</p>
             </div>
             <div className="flex basis-1/2 flex-col gap-2">
-              <Image className="hover:cursor-mincursor" src={gin} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-              <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">Plateau Gin</h5>
+              <Link href={"/shop/plateau-gin"}>
+                <Image className="hover:cursor-mincursor" src={gtranq} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
+
+                <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">Plateau Gin</h5>
+              </Link>
               <p className="font-copy text-copy font-semibold">495 DKK</p>
-              <p className="font-copy text-copy">Utrolige botanicals og et friskt take på hvad gin kan!</p>
             </div>
           </div>
         </section>
 
         <section className="relative w-full">
-          <Image className="absolute -top-56 left-0  hidden md:block" src={buetekst} alt="" width={274} height={297}></Image>
+          <Image className="absolute -top-32 left-0  hidden md:block" src={buetekst} alt="" width={274} height={297}></Image>
         </section>
 
-        <section className="flex flex-col items-center justify-center gap-5 gap-y-3 p-6 md:mx-10  md:flex-row md:py-20">
+        <section className="mt-5 flex  flex-col items-center justify-center gap-5 gap-y-3 p-6 md:mx-10  md:flex-row md:py-20">
           <div className=" flex basis-1/2 flex-col items-start gap-y-3">
             <h2 className="font-ssort text-mobileH2 md:text-wh2">&quot;Chartrøse&quot; til Gorilla</h2>
             <p className="font-copy text-copy lg:max-w-[80%]">
