@@ -2,6 +2,7 @@ import Image from "next/image";
 import textcirkel from "../../public/images/roundlogo.svg";
 import lgo from "../../public/images/daeksel.svg";
 import Button from "../../components/Button";
+import Buttonw from "../../components/Buttonw";
 
 export default function alder() {
   return (
@@ -29,8 +30,8 @@ export default function alder() {
         </h1>
         <div className=" flex items-center">
           <div className="mx-auto flex gap-10 pt-10">
-            <Button href={"/shop"} text={"JA"}></Button>
-            <Button href={"/shop"} text={"NEJ"}></Button>
+            <Button href={"/shop"} text={"   JA   "}></Button>
+            <Buttonw href={"/shop"} text={"   NEJ   "}></Buttonw>
           </div>
         </div>
       </section>
