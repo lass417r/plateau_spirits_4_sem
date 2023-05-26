@@ -37,9 +37,9 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col gap-5 p-6 pt-20 md:mx-20 md:flex-row">
-          <div className="  flex w-10 flex-initial basis-1/3 flex-col gap-3">
+          <div className="  flex  flex-initial basis-1/3 flex-col gap-3">
             <h2 className=" font-ssort text-mobileH2 md:text-wh2">Udvalgte produkter</h2>
-            <p className=" font-copy text-copy ">
+            <p className="  font-copy text-copy">
               Vores produkter er skabt med en passion for æstetik og håndværk, og vi tror på at give vores kunder en autentisk og inspirerende oplevelse. Hver eneste genstand er nøje fremstillet af
               vores master distiller, der lægger sjæl og passion i hvert eneste trin af processen.
             </p>
@@ -48,7 +48,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex basis-2/3 flex-row items-baseline gap-5">
-            <div className="flex basis-1/2 flex-col gap-2 ">
+            <div className="flex basis-1/2 flex-col gap-2 break-normal">
               <Image className="hover:cursor-mincursor" src={vodka} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
               <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">Roÿe Vodka</h5>
               <p className="font-copy text-copy  font-semibold">3.200 DKK</p>
