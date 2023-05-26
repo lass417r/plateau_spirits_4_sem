@@ -1,4 +1,5 @@
 "use client";
+
 function Nyhedsbrev() {
   function handleSubmit(e) {
     e.preventDefault();
