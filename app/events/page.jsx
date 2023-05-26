@@ -25,7 +25,7 @@ export default function Events() {
 
             <ul
               className=" list-disc pl-6
-               font-megettyk text-wh6  text-orangebase"
+               font-megettyk text-mobileH5 text-orangebase  md:text-wh6"
             >
               <li className="mb-4 mt-4">Virksomhedsarrangementer</li>
               <li className="mb-4">Private arrangementer</li>
@@ -40,8 +40,8 @@ export default function Events() {
             <Button href="/shop" text="Book Event"></Button>
           </div>
         </div>
-        <div className="relative flex flex-col items-center gap-5 p-5 md:basis-1/2">
-          <Image className=" absolute  z-0 " src={grid} width={835} height={1106} alt="Illustrativt element" />
+        <div className="relative flex flex-col items-center gap-5 overflow-hidden p-5 pt-28 md:basis-1/2 md:overflow-visible">
+          <Image className="absolute z-0 hidden md:block " src={grid} width={835} height={1106} alt="Illustrativt element" />
           <motion.div className="relative inline-block md:mt-32" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
             <Image className=" absolute -right-16 -top-28 z-10" src={events} width={318} height={456} alt="Illustrativt element" />
             <Image className=" z-0 md:mt-5" src={pic8} width={500} height={500} alt="Billede af lokation" />
