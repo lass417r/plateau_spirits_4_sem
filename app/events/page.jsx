@@ -9,8 +9,8 @@ import pic8 from "../../public/images/pic8.png";
 import pic15 from "../../public/images/pic15.png";
 import pic10 from "../../public/images/pic10.png";
 import pic11 from "../../public/images/pic11.png";
+import gitter from "../../public/images/gitter.svg";
 
-import grid from "../../public/assets/grid.svg";
 import events from "../../public/assets/events.svg";
 import deksel from "../../public/assets/deksel_skrift.svg";
 
@@ -25,14 +25,13 @@ export default function Events() {
 
             <ul
               className=" list-disc pl-6
-               font-megettyk text-mobileH5 text-orangebase  md:text-wh6"
+               font-megettyk text-copy text-blackbase"
             >
               <li className="mb-4 mt-4">Virksomhedsarrangementer</li>
               <li className="mb-4">Private arrangementer</li>
               <li className="mb-4">Foredrag m.m.</li>
             </ul>
             <p className="font-copy text-copy lg:max-w-[80%]">
-              <br />
               Vores lokaler er velegnede til både private og erhvervsmæssige arrangementer, hvor I kan nyde vores unikke spiritus produkter under arrangementet. Vi tilpasser gerne arrangementet til
               jeres ønsker og behov og tilbyder også muligheden for at inkludere en rundvisning i vores destilleri og en præsentation af destillationsprocessen.
             </p>
@@ -41,7 +40,7 @@ export default function Events() {
           </div>
         </div>
         <div className="relative flex flex-col items-center gap-5 overflow-hidden p-5 pt-28 md:basis-1/2 md:overflow-visible">
-          <Image className="absolute z-0 hidden md:block " src={grid} width={835} height={1106} alt="Illustrativt element" />
+          <Image className="absolute z-0 hidden md:block " src={gitter} width={1500} height={1500} alt="Illustrativt element" />
           <motion.div className="relative inline-block md:mt-32" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
             <Image className=" absolute -right-16 -top-28 z-10" src={events} width={318} height={456} alt="Illustrativt element" />
             <Image className=" z-0 md:mt-5" src={pic8} width={500} height={500} alt="Billede af lokation" />

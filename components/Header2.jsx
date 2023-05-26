@@ -83,8 +83,8 @@ export default function Navbar() {
     <header className="body-font sticky top-0 z-50 text-gray-600  ">
       <div className={color ? "delay-50 drop-shadow-sm transition ease-in-out md:bg-greybase " : "delay-50 bg-transparent transition ease-in-out"}>
         <div className="container mx-auto flex flex-row items-center justify-between  bg-greybase p-7 ">
+          {/*LOGO*/}
           <Link href="/" className="flex">
-            {/*LOGO*/}
             <Image src={logo} alt="Logo" width={150} height={60} />
           </Link>
           <nav className="hidden items-center justify-center md:ml-auto md:flex ">
@@ -100,7 +100,7 @@ export default function Navbar() {
             </Link>
           </nav>
           {/*MOBILE ONLY*/}
-          <div className="flex items-center justify-center space-x-4 md:hidden ">
+          <div className="z-50 flex items-center justify-center space-x-4 overscroll-y-none md:hidden ">
             <div>
               <Link href="/kurv" className="flex items-center gap-x-2 pl-4">
                 <Image src={ikoner_kopi} alt="Cart icon" width={30} height={30} />
@@ -118,9 +118,16 @@ export default function Navbar() {
         style={{ transition: "transform 5s ease-in-out" }}
       >
         {/*MOBILE NAV*/}
-        <nav className=" flex w-full flex-col items-start">
+        <nav className="flex w-full flex-col items-start">
           {menu.map((item, index) => (
-            <Link href={item.href} key={index} className=" my-3 font-tyk text-mobileH4 text-blackbase" target={item.external ? "_blank" : ""} rel={item.external ? "noopener" : ""}>
+            <Link
+              href={item.href}
+              key={index}
+              onClick={toggleCart}
+              className=" my-3 font-tyk text-mobileH4 text-blackbase"
+              target={item.external ? "_blank" : ""}
+              rel={item.external ? "noopener" : ""}
+            >
               {item.label}
             </Link>
           ))}
