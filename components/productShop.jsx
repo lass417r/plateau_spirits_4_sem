@@ -39,7 +39,7 @@ const ProductShop = ({ product }) => {
           </motion.div>
         </div>
       </Link>
-      <div className="flex flex-col items-center gap-1 text-blackbase">
+      <div className="flex flex-col items-center gap-1 text-center text-blackbase">
         <h5 className="font-tyk text-wh5">{product.name}</h5>
         <p className="font-copy text-copy">{product.price} DKK</p>
         <div className="mt-5">

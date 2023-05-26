@@ -20,7 +20,7 @@ export default function Om() {
         <div className="top-3 z-20 basis-1/2 md:sticky">
           <Historie className=""></Historie>
         </div>
-        <div className="mt-16 flex basis-1/2 flex-col items-start  gap-10 p-5 md:mr-20  md:gap-5">
+        <div className="mt-16 flex basis-1/2 flex-col items-start gap-10 overflow-x-hidden p-5 md:mr-20  md:gap-5">
           <motion.div className="relative inline-block md:mt-40" initial={{ opacity: 0.2 }} whileInView={{ opacity: 1, transition: { duration: 1 } }}>
             <Image className="fotoinview absolute -right-40 -top-40 z-10" src={deksel} width={376} height={364} alt="Billede af ejerne" />
             <Image className="fotoinview z-0" src={pic4} width={450} height={550} alt="Billede af ejerne" />

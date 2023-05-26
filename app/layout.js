@@ -2,9 +2,9 @@ import "../styles/globals.css";
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
 import Header2 from "../components/Header2";
+import FooterMobil from "../components/FooterMobil";
 import Footer from "../components/Footer";
 import TopBanner from "@/components/TopBanner";
-import Head from "next/head";
 
 const ebGaramond = EB_Garamond({
   weight: "400",
@@ -60,16 +60,18 @@ export default function RootLayout({ children }) {
       lang="da"
       className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable} ${ebGaramond.variable} scroll-smooth antialiased`}
     >
-      <Head>
-        <link rel="icon" href="../public/assets/favicon.svg" />
-      </Head>
       <body className="bg-greybase">
         <TopBanner></TopBanner>
         <Header2></Header2>
         <main>{children}</main>
 
         <footer className="overflow-hidden bg-matte200">
-          <Footer></Footer>
+          <div className="hidden md:block">
+            <Footer></Footer>
+          </div>
+          <div className="block md:hidden">
+            <FooterMobil></FooterMobil>
+          </div>
         </footer>
       </body>
     </html>

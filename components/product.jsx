@@ -24,9 +24,7 @@ const Product = ({ product }) => {
       router.refresh();
     });
   };
-  //   <div className="relative z-0 mt-8 aspect-[1/1]  h-auto w-full md:-right-24 md:-top-28 md:flex md:basis-2/3 md:flex-col md:gap-3  ">
-  //   <Image src={cocktailpic} alt="billede af cocktail" fill className="object-cover object-center"></Image>
-  // </div>
+
   return (
     <div className="container">
       <div className=" flex flex-col gap-10 p-5 md:grid md:grid-cols-2 md:items-start md:gap-x-8">
@@ -35,14 +33,14 @@ const Product = ({ product }) => {
         </div>
         {/* Product info */}
         <div className="sm:px-0 md:px-4 ">
-          <h1 className="font-tyk text-wh1 text-blackbase">{product.name}</h1>
+          <h1 className="font-tyk text-mobileH1 text-blackbase md:text-wh1">{product.name}</h1>
           <div>
             <div className="mt-3">
               <div className="font-copy text-copy text-blackbase" dangerouslySetInnerHTML={{ __html: product.description }} />
             </div>
 
             <div className="mt-10">
-              <h6 className="font-tyk text-wh6 text-blackbase">Pris</h6>
+              <h5 className="font-tyk text-mobileH5 text-blackbase md:text-wh5">Pris</h5>
               <p className="font-copy text-copy text-blackbase">{product.price} DKK</p>
             </div>
 
