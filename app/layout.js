@@ -64,14 +64,13 @@ export default function RootLayout({ children }) {
       className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable} ${ebGaramond.variable}`}
     >
       <body className="bg-greybase">
-        <OverAtten></OverAtten>
         <TopBanner className="z-0"></TopBanner>
-        <header className="z-0">
-          <Header2></Header2>
-        </header>
+
+        <Header2></Header2>
 
         <main className="z-0">
           {children}
+          <OverAtten></OverAtten>
           <Cookiebox />
         </main>
 

@@ -19,6 +19,13 @@ export default function OverAtten() {
     setPopupClosed(true);
   }
 
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) {
+      html.style.overflow = popupClosed ? "auto" : "hidden";
+    }
+  }, [popupClosed]);
+
   return (
     <>
       {!popupClosed && (
@@ -32,7 +39,7 @@ export default function OverAtten() {
               <h1 className=" text-center font-ssort text-mobileH1 text-black500 md:text-wh1">Er du over 18?</h1>
               <div className="mx-auto flex gap-10 pt-10">
                 <Button onClick={btnClick} href={"/"} text={"   JA   "}></Button>
-                <Buttonw href={"/"} text={"   NEJ   "}></Buttonw>
+                <Buttonw href={"https://www.dr.dk/drtv/ramasjang"} text={"   NEJ   "}></Buttonw>
               </div>
             </div>
           </section>

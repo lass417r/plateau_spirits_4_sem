@@ -57,6 +57,13 @@ export default function Navbar() {
     }
   }, []);
 
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) {
+      html.style.overflow = menuOpen ? "hidden" : "auto";
+    }
+  }, [menuOpen]);
+
   const menu = [
     {
       label: "SHOP",
@@ -81,9 +88,9 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="body-font sticky top-0 z-50 text-gray-600  ">
-      <div className={color ? "delay-50 drop-shadow-sm transition ease-in-out md:bg-greybase " : "delay-50 bg-transparent transition ease-in-out"}>
-        <div className="container mx-auto flex flex-row items-center justify-between  bg-greybase p-7 ">
+    <header className="sticky inset-x-0 top-0 z-40  h-20 text-gray-600">
+      <div className={`"sticky inset-0 h-20 ${color ? "delay-50  drop-shadow-sm transition ease-in-out md:bg-greybase " : "delay-50 bg-transparent transition ease-in-out"}`}>
+        <div className="container z-50 mx-auto flex  flex-row items-center justify-between bg-greybase p-7 ">
           {/*LOGO*/}
           <Link href="/" className="flex">
             <Image src={logo} alt="Logo" width={150} height={60} />
@@ -126,6 +133,6 @@ export default function Navbar() {
           ))}
         </nav>
       </motion.div>
-    </div>
+    </header>
   );
 }

@@ -1,7 +1,5 @@
 "use client";
 
-import Button from "../components/Button";
-import Buttonw from "../components/Buttonw";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -32,8 +30,12 @@ function Cookiebox() {
             </Link>
           </div>
           <div className="flex w-full basis-1/3 flex-col gap-2 px-6 pt-6 text-center font-tyk text-mobileH3 ">
-            <Button onClick={btnClick} href={"/"} text={"Accepter cookies"}></Button>
-            <Buttonw onClick={btnClick} href={"/"} text={"Afvis cookies"}></Buttonw>
+            <div onClick={btnClick} className="voresKnap border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-black400 md:text-deskButtonPrimary md:tracking-wider">
+              Accepter cookies
+            </div>
+            <div onClick={btnClick} className="voresKnap border-2 border-black400  bg-gray-200 px-5  py-3 font-ssort text-black400 md:text-deskButtonPrimary md:tracking-wider">
+              Afvis cookies
+            </div>
             <form>
               <label className=" flex  gap-4 pt-1 text-right text-mobilexs" htmlFor="marketing">
                 <input type="checkbox" />
