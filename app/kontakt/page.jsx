@@ -13,13 +13,11 @@ import deksel from "../../public/assets/deksel_skrift2.svg";
 export default function Shop() {
   return (
     <>
-      <section className="mx-20 mt-16 flex gap-20">
-        <div className="h-[400px] basis-2/3">
-          {/* Virker ikke korrekt */}
+      <section className=" mt-5 flex flex-col-reverse gap-5 p-5 md:mx-20 md:mt-16 md:flex-row md:gap-20">
+        <div className="h-[400px] md:basis-2/3">
           <GoogleMap />
         </div>
-
-        <div className="basis-1/2">
+        <div className="md:basis-1/3">
           <h1 className="font-tyk text-mobileH1 text-orangebase md:text-wh1">Find vej</h1>
           <h5 className="text-wh font-tyk text-blackbase"> Adresse: </h5>
           <p className="font-copy text-copy  text-blackbase">
@@ -60,19 +58,9 @@ export default function Shop() {
           <div className="flex-col justify-center">
             <h2 className="font-tyk text-mobileH1 text-blackbase md:text-wh1">Kontaktformular</h2>
             <Kontakt></Kontakt>
-            {/* <Image src={deksel} width={442} height={439} alt="Dekorativ illustration"></Image> */}
           </div>
         </div>
       </section>
-      {/* <section className=" -mt-32 ">
-        <div className=" flex flex-col justify-center gap-10 pt-64">
-            <h2 className="font-tyk text-wh1 text-blackbase">Kontaktformular</h2>
-            <Kontakt></Kontakt>    
-          <div className=" ">
-              <Image src={deksel} width={442} height={439} alt="Dekorativ illustration"></Image>
-            </div>
-        </div>
-      </section> */}
       <section className=" bg-clay py-10 ">
         <TextBanner text="BESØG OS PÅ FLÆSKETORVET 6, KØDBYEN &nbsp; - &nbsp; BESØG OS PÅ FLÆSKETORVET 6, KØDBYEN"></TextBanner>
       </section>

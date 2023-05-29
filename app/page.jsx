@@ -48,18 +48,16 @@ export default function Home() {
             </div>
           </div>
           <div className="flex basis-2/3 flex-row items-baseline gap-5">
-            <div className="flex basis-1/2 flex-col gap-2 break-normal">
+            <div className="flex flex-col gap-2">
               <Link href={"/shop/roye-vodka"}>
                 <Image className="hover:cursor-mincursor" src={gluna} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-
                 <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">La Luna Absint</h5>
               </Link>
               <p className="font-copy text-copy  font-semibold">445 DKK</p>
             </div>
-            <div className="flex basis-1/2 flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <Link href={"/shop/plateau-gin"}>
                 <Image className="hover:cursor-mincursor" src={gtranq} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-
                 <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">Plateau Gin</h5>
               </Link>
               <p className="font-copy text-copy font-semibold">495 DKK</p>

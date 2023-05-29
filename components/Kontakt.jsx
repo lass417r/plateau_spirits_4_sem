@@ -15,56 +15,27 @@ function Kontakt() {
           <label className="text-copy font-normal text-blackbase" for="email">
             Email
           </label>
-          <input
-            className={styles.email}
-            type="text"
-            placeholder="f.eks. johndoe@mail.com"
-            name="email"
-          />
+          <input className={styles.email} type="text" placeholder="f.eks. johndoe@mail.com" name="email" />
         </div>
 
         <div>
           <label className="text-copy font-normal text-blackbase" for="phone">
             Telefon nummer
           </label>
-          <input
-            className={styles.phone}
-            placeholder="f.eks. 22222222"
-            type="text"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-          />
+          <input className={styles.phone} placeholder="f.eks. 22222222" type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
         </div>
         <div>
           <label className="text-copy font-normal text-blackbase" for="email">
-            Antal personer
+            Emne
           </label>
-          <input
-            className={styles.email}
-            type="text"
-            placeholder="f.eks. 30 personer"
-            name="personer"
-          />
+          <input className={styles.email} type="text" placeholder="f.eks. forspørgelse på ..." name="emne" />
         </div>
-        <div>
-          <label className="text-copy font-normal text-blackbase" for="country">
-            Type event
-          </label>
-          <select id="country" className={styles.select} name="country">
-            <option value="general"> General enquiries</option>
-            <option value="tickets"> Ticket enquiries</option>
-          </select>
-        </div>
+
         <div>
           <label className="text-copy font-normal text-blackbase" for="subject">
             Besked
           </label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Her skal du skrive din besked."
-          ></textarea>
+          <textarea id="subject" name="subject" placeholder="Her skal du skrive din besked."></textarea>
         </div>
 
         <input
