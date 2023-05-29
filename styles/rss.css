@@ -24,8 +24,8 @@
 /* scrolling-left is continuous/repeatly text */
 @keyframes scrolling-left1 {
   0% {
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
+    transform: translateX(45%);
+    -webkit-transform: translateX(45%);
   }
   100% {
     transform: translateX(-100%);
