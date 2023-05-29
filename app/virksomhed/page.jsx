@@ -98,8 +98,8 @@ export default function Shop() {
         </div>
         <div className="h-full flex justify-center w-full">
           <iframe className="lg:w-[800px] md:w-[768px] md:h-[400px] lg:h-[450px]"
-            width="350"
-            height="200"
+            width="450"
+            height="250"
             src="https://www.youtube.com/embed/HEUMrGoBeUs"
             title="YouTube video player"
             frameborder="0"
