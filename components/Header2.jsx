@@ -2,22 +2,23 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 import { useRef, useState, useEffect } from "react";
 import { getCart } from "@/lib/swell/cart";
 import useSWR from "swr";
 import { motion } from "framer-motion";
 
 import logo from "../public/assets/navnelogo.svg";
-import ikoner from "../public/assets/Ikoner.svg";
 import ikoner_kopi from "../public/assets/Ikoner-kopi.svg";
 import luk from "../public/assets/sort.svg";
 import oopen from "../public/assets/sort-kopi.svg";
 
 export default function Navbar() {
   const { data: cart, isLoading } = useSWR("cart", getCart);
-
   const [menuOpen, setMenuOpen] = useState(false);
   const ref = useRef();
+  const router = useRouter();
+  const currentRoute = usePathname();
 
   const HamburgerIcon = () => (
     <div onClick={toggleCart}>
@@ -89,7 +90,7 @@ export default function Navbar() {
           </Link>
           <nav className="hidden items-center justify-center md:ml-auto md:flex ">
             {menu.map((item, index) => (
-              <Link href={item.href} key={index} className=" mx-3 font-tyk text-blackbase hover:text-orangebase " target={item.external ? "_blank" : ""} rel={item.external ? "noopener" : ""}>
+              <Link href={item.href} key={index} className={`mx-3 font-tyk text-blackbase hover:text-orangebase  ${currentRoute === item.href ? "text-orangebase" : "text-blackbase "}`}>
                 {item.label}
               </Link>
             ))}
@@ -104,7 +105,6 @@ export default function Navbar() {
             <div>
               <Link href="/kurv" className="flex items-center gap-x-2 pl-4">
                 <Image src={ikoner_kopi} alt="Cart icon" width={30} height={30} />
-
                 {cart?.item_quantity ? <span className="rounded text-xs flex h-5 w-5 items-center justify-center bg-orangebase font-medium text-white100">{cart?.item_quantity}</span> : null}
               </Link>
             </div>
@@ -120,14 +120,7 @@ export default function Navbar() {
         {/*MOBILE NAV*/}
         <nav className="flex w-full flex-col items-start">
           {menu.map((item, index) => (
-            <Link
-              href={item.href}
-              key={index}
-              onClick={toggleCart}
-              className=" my-3 font-tyk text-mobileH4 text-blackbase"
-              target={item.external ? "_blank" : ""}
-              rel={item.external ? "noopener" : ""}
-            >
+            <Link href={item.href} key={index} onClick={toggleCart} className={`my-3 font-tyk text-mobileH4 text-blackbase  ${currentRoute === item.href ? "text-orangebase" : "text-blackbase "}`}>
               {item.label}
             </Link>
           ))}

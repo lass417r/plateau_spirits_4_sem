@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="da"
-      className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable} ${ebGaramond.variable} scroll-smooth antialiased`}
+      className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable} ${ebGaramond.variable}`}
     >
       <body className="bg-greybase">
         <TopBanner></TopBanner>

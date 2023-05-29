@@ -36,7 +36,9 @@ export default function Events() {
               jeres ønsker og behov og tilbyder også muligheden for at inkludere en rundvisning i vores destilleri og en præsentation af destillationsprocessen.
             </p>
             {/* Virker ikke korrekt, skal gå ned af siden */}
-            <Button href="/shop" text="Book Event"></Button>
+            <a href="#KontaktEvents" className="voresKnap border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-black400 md:text-deskButtonPrimary md:tracking-wider">
+              Book Event
+            </a>
           </div>
         </div>
         <div className="relative flex flex-col items-center gap-5 overflow-hidden p-5 pt-28 md:basis-1/2 md:overflow-visible">
@@ -74,7 +76,7 @@ export default function Events() {
         </div>
       </section>
       <section className=" flex min-h-screen flex-col items-center justify-between  bg-matte200 pt-10">
-        <div className="z w-full">
+        <div id="KontaktEvents" className="z w-full">
           <TextBanner text="BOOK DIT NÆSTE EVENT! &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!  &nbsp; - &nbsp; BOOK DIT NÆSTE EVENT!"></TextBanner>
         </div>
         <div className=" mb-10 ">

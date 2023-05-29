@@ -30,10 +30,10 @@ export default function Home() {
 
         <section className=" w-160px h-160px relative hidden md:mt-10 md:block">
           {/* Virker ikke korrekt */}
-          <Link href="#udvalgteprodukter">
-            <Image className="z-1 h-full w-full animate-spin-slow" src={herocircle} width={300} height={300} alt="Flot tekst illustration"></Image>
+          <Image className="z-1 h-full w-full animate-spin-slow" src={herocircle} width={300} height={300} alt="Flot tekst illustration"></Image>
+          <a href="#udvalgteprodukter">
             <Image className="absolute left-1/2 top-1/2 z-10 h-14 w-14 -translate-x-1/2 -translate-y-1/2 transform" src={arrow} width={100} height={100} alt="Pil"></Image>
-          </Link>
+          </a>
         </section>
 
         <section className="flex flex-col gap-5 p-6 pt-20 md:mx-20 md:flex-row">
@@ -48,18 +48,16 @@ export default function Home() {
             </div>
           </div>
           <div className="flex basis-2/3 flex-row items-baseline gap-5">
-            <div className="flex basis-1/2 flex-col gap-2 break-normal">
+            <div className="flex flex-col gap-2">
               <Link href={"/shop/roye-vodka"}>
                 <Image className="hover:cursor-mincursor" src={gluna} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-
                 <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">La Luna Absint</h5>
               </Link>
               <p className="font-copy text-copy  font-semibold">445 DKK</p>
             </div>
-            <div className="flex basis-1/2 flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <Link href={"/shop/plateau-gin"}>
                 <Image className="hover:cursor-mincursor" src={gtranq} width={315} height={463} alt="Flot billede af Gin flaske"></Image>
-
                 <h5 className="pt-4 text-mobileH5 font-normal md:text-wh5">Plateau Gin</h5>
               </Link>
               <p className="font-copy text-copy font-semibold">495 DKK</p>

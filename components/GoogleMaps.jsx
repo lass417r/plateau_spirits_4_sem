@@ -1,13 +1,17 @@
-import React from "react";
+import { useMemo } from "react";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
-const GoogleMap = ({ location }) => {
-  const src = `https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=${location}`;
+export default function Home() {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+  });
 
-  return (
-    <div className="aspect-video">
-      <iframe className="h-full w-full" width="100%" height="100%" frameBorder="0" style={{ border: 0 }} src={src} />
-    </div>
-  );
-};
+  if (!isLoaded) return <div>Loading...</div>;
+  return <Map />;
+}
 
-export default GoogleMap;
+function Map() {
+  const center = useMemo(() => ({ lat: 55.668253, lng: 12.558536 }), []);
+
+  return <GoogleMap zoom={19} center={center} mapContainerClassName="w-full h-full"></GoogleMap>;
+}
