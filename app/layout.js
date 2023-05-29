@@ -5,6 +5,8 @@ import Header2 from "../components/Header2";
 import FooterMobil from "../components/FooterMobil";
 import Footer from "../components/Footer";
 import TopBanner from "@/components/TopBanner";
+import OverAtten from "@/components/OverAtten";
+import Cookiebox from "@/components/Cookiebox";
 
 const ebGaramond = EB_Garamond({
   weight: "400",
@@ -61,11 +63,18 @@ export default function RootLayout({ children }) {
       className={`${rocaOneBlack.variable} ${rocaOneRegular.variable} ${rocaOneBold.variable} ${rocaOneHeavy.variable} ${rocaOneThin.variable} ${rocaOneLight.variable} ${ebGaramond.variable}`}
     >
       <body className="bg-greybase">
-        <TopBanner></TopBanner>
-        <Header2></Header2>
-        <main>{children}</main>
+        <OverAtten></OverAtten>
+        <TopBanner className="z-0"></TopBanner>
+        <header className="z-0">
+          <Header2></Header2>
+        </header>
 
-        <footer className="overflow-hidden bg-matte200">
+        <main className="z-0">
+          {children}
+          <Cookiebox />
+        </main>
+
+        <footer className="z-0 overflow-hidden bg-matte200">
           <div className="hidden md:block">
             <Footer></Footer>
           </div>

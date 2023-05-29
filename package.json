@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.14",
     "@next/font": "^13.4.2",
     "@react-google-maps/api": "^2.18.1",
     "autoprefixer": "10.4.14",

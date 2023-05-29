@@ -81,7 +81,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="body-font sticky top-0 z-50 text-gray-600  ">
+    <div className="body-font sticky top-0 z-50 text-gray-600  ">
       <div className={color ? "delay-50 drop-shadow-sm transition ease-in-out md:bg-greybase " : "delay-50 bg-transparent transition ease-in-out"}>
         <div className="container mx-auto flex flex-row items-center justify-between  bg-greybase p-7 ">
           {/*LOGO*/}
@@ -126,6 +126,6 @@ export default function Navbar() {
           ))}
         </nav>
       </motion.div>
-    </header>
+    </div>
   );
 }
