@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       cursor: {
-        mincursor: "url(https://bertilserveau.dk/Asset%2053.svg) 0 0, pointer",
+        mincursor:
+          "url(https://bertilserveau.dk/Asset%2053.svg) 50 50, pointer",
       },
       colors: {
         white100: "#FFFFFF",
