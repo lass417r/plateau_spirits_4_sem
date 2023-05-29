@@ -54,9 +54,7 @@ const rocaOneThin = localFont({
 export const metadata = {
   title: "Plateau Spirits",
   description: "Created by BCL",
-  icons: {
-    icon: { url: "/icon.png", type: "image/png" },
-  },
+  icon: { url: "/icon.png", type: "image/png" },
 };
 
 export default function RootLayout({ children }) {
