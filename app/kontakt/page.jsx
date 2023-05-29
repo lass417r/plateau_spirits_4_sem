@@ -30,7 +30,7 @@ export default function Shop() {
         </div>
       </section>
       <section className=" bg-clay px-24 py-24 ">
-        <h2 className="text-center font-tyk text-mobileH2 md:text-wh2">Kontakt information</h2>
+        {/* <h2 className="text-center font-tyk text-mobileH2 md:text-wh2">Kontakt information</h2> */}
         <div className="flex-col  justify-between lg:flex lg:flex-row ">
           <div className="flex flex-col justify-center">
           <div className="flex justify-center p-10">
