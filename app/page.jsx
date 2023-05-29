@@ -30,10 +30,10 @@ export default function Home() {
 
         <section className=" w-160px h-160px relative hidden md:mt-10 md:block">
           {/* Virker ikke korrekt */}
-          <Link href="#udvalgteprodukter">
-            <Image className="z-1 h-full w-full animate-spin-slow" src={herocircle} width={300} height={300} alt="Flot tekst illustration"></Image>
+          <Image className="z-1 h-full w-full animate-spin-slow" src={herocircle} width={300} height={300} alt="Flot tekst illustration"></Image>
+          <a href="#udvalgteprodukter">
             <Image className="absolute left-1/2 top-1/2 z-10 h-14 w-14 -translate-x-1/2 -translate-y-1/2 transform" src={arrow} width={100} height={100} alt="Pil"></Image>
-          </Link>
+          </a>
         </section>
 
         <section className="flex flex-col gap-5 p-6 pt-20 md:mx-20 md:flex-row">
