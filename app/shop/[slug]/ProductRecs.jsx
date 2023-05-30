@@ -12,32 +12,32 @@ function ProductRecs(props) {
       <div className="p-5 md:mb-6">
         <h2 className="udvalgteProdukter font-tyk text-mobileH2 md:text-wh2">Vi anbefaler også</h2>
       </div>
-      <div className="flex flex-row gap-5 overflow-x-scroll p-5 md:gap-14 md:overflow-hidden md:pb-28">
-        <div className="ml-5 flex max-h-[463px] max-w-[400px] basis-1/3 flex-col items-center border border-solid border-orangebase outline-2">
-          <Image className="basis-1/2 hover:cursor-mincursor" src={gluna} width={400} height={463} alt="Flot billede af Gin flaske"></Image>
-          <div className="my-2 flex basis-1/2 flex-col items-center gap-2 p-5 text-center md:my-5 md:gap-5">
+      <div className="flex w-auto flex-row gap-5 overflow-scroll p-5 md:gap-14 md:overflow-hidden md:pb-28">
+        <div className=" flex w-[100%]  flex-col items-center border border-solid border-orangebase outline-2 md:basis-1/3">
+          <Image className="hover:cursor-mincursor" src={gluna} width={400} height={463} alt="Flot billede af Gin flaske"></Image>
+          <div className="my-2 flex  flex-col items-center gap-2 p-5 text-center md:my-5 md:gap-5">
             <h5 className="text-mobileH5 font-normal md:text-wh5">La Luna Absint</h5>
-            <p className="mb-5 font-copy text-copy">445 DKK</p>
+            <p className="mx-10 mb-5 font-copy text-copy">445 DKK</p>
             <div className="hidden md:block">
               <Button href={"/shop/roye-vodka"} text={"SE PRODUKT"}></Button>
             </div>
           </div>
         </div>
-        <div className="flex max-h-[463px] max-w-[400px] basis-1/3 flex-col items-center border border-solid border-orangebase outline-2">
-          <Image className="basis-1/2 hover:cursor-mincursor" src={gtranq} width={400} height={463} alt="Flot billede af Gin flaske"></Image>
-          <div className="my-2 flex basis-1/2 flex-col items-center gap-2 p-5 text-center md:my-5 md:gap-5">
+        <div className="flex w-[100%]  flex-col items-center border border-solid border-orangebase outline-2 md:basis-1/3">
+          <Image className=" hover:cursor-mincursor" src={gtranq} width={400} height={463} alt="Flot billede af Gin flaske"></Image>
+          <div className="my-2 flex  flex-col items-center gap-2 p-5 text-center md:my-5 md:gap-5">
             <h5 className="text-mobileH5 font-normal md:text-wh5">Touché Aquavit</h5>
-            <p className="mb-5 font-copy text-copy">295 DKK</p>
+            <p className="mx-10 mb-5 font-copy text-copy">295 DKK</p>
             <div className="hidden md:block">
               <Button href={"/shop/roye-vodka"} text={"SE PRODUKT"}></Button>
             </div>
           </div>
         </div>
-        <div className="flex max-h-[463px] max-w-[400px] basis-1/3 flex-col items-center border border-solid border-orangebase outline-2">
-          <Image className="basis-1/2 hover:cursor-mincursor" src={gtouche} width={400} height={463} alt="Flot billede af Gin flaske"></Image>
-          <div className="my-2 flex basis-1/2 flex-col items-center gap-2 p-5 text-center md:my-5 md:gap-5">
+        <div className="flex  w-[100%] flex-col items-center border border-solid border-orangebase outline-2 md:basis-1/3">
+          <Image className=" hover:cursor-mincursor" src={gtouche} width={400} height={463} alt="Flot billede af Gin flaske"></Image>
+          <div className="my-2 flex flex-col items-center gap-2 p-5 text-center md:my-5 md:gap-5">
             <h5 className="text-mobileH5 font-normal md:text-wh5">Tranquillité Gin</h5>
-            <p className="mb-5 font-copy text-copy">395 DKK</p>
+            <p className="mx-10 mb-5 font-copy text-copy">395 DKK</p>
             <div className="hidden md:block">
               <Button href={"/shop/roye-vodka"} text={"SE PRODUKT"}></Button>
             </div>

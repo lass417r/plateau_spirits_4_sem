@@ -9,7 +9,8 @@ export default async function productPage({}) {
 
   return (
     <div className="md:mx-32">
-      {/* Her videresender vi vores products array til vores komponent der mapper over dataen */}
+      {/* Her videresender vi vores products array til 
+      vores komponent der mapper over dataen */}
       <Products products={products} />{" "}
     </div>
   );

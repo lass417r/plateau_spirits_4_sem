@@ -14,7 +14,7 @@ export default async function productPage({ params }) {
       <section className=" overflow-hidden bg-matte200">
         <Cocktail product={product} />
       </section>
-      <section className=" md:mx-32">
+      <section className=" overflow-hidden md:mx-32">
         <ProductRecs props={recs} />
       </section>
     </div>
