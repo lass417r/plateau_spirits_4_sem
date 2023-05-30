@@ -16,7 +16,7 @@ const ProductShop = ({ product }) => {
      hvis det er en flaske  fylder den kun 1.*/
   }
   return product.price === 500 ? (
-    <div className=" grid  gap-2 p-5 md:col-span-2" key={product.id}>
+    <div className=" grid basis-2/3 gap-2 p-5 md:col-span-2" key={product.id}>
       <Link key={product.id} href={`/shop/${product.slug}`}>
         <div className="relative flex aspect-[2/1] ">
           <motion.div

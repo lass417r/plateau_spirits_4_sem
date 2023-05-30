@@ -31,15 +31,13 @@ export default function Home() {
         <section className=" w-160px h-160px relative hidden md:mt-10 md:block">
           {/* Virker ikke korrekt */}
           <Image className="z-1 h-full w-full animate-spin-slow" src={herocircle} width={300} height={300} alt="Flot tekst illustration"></Image>
-          <a href="#udvalgteprodukter">
-            <Image className="absolute left-1/2 top-1/2 z-10 h-14 w-14 -translate-x-1/2 -translate-y-1/2 transform" src={arrow} width={100} height={100} alt="Pil"></Image>
-          </a>
+          <Image className="absolute left-1/2 top-1/2 z-10 h-14 w-14 -translate-x-1/2 -translate-y-1/2 transform" src={arrow} width={100} height={100} alt="Pil"></Image>
         </section>
 
-        <section className="flex flex-col lg:gap-40 p-6 pt-20 md:mx-20 md:flex-row">
+        <section className="flex flex-col gap-5 p-6 pt-20 md:mx-20 md:flex-row lg:gap-40">
           <div className="  flex  flex-initial basis-1/2 flex-col gap-3">
             <h2 className=" font-ssort text-mobileH2 md:text-wh2">Udvalgte produkter</h2>
-            <p className="  font-copy max-w-[500px] text-copy">
+            <p className="  max-w-[500px] font-copy text-copy">
               Vores produkter er skabt med en passion for æstetik og håndværk, og vi tror på at give vores kunder en autentisk og inspirerende oplevelse. Hver eneste genstand er nøje fremstillet af
               vores master distiller, der lægger sjæl og passion i hvert eneste trin af processen.
             </p>

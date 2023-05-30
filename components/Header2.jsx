@@ -88,9 +88,9 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky inset-x-0 top-0 z-40  h-20 text-gray-600">
-      <div className={`"sticky inset-0 h-20 ${color ? "delay-50  drop-shadow-sm transition ease-in-out md:bg-greybase " : "delay-50 bg-transparent transition ease-in-out"}`}>
-        <div className="container z-50 mx-auto flex  flex-row items-center justify-between bg-greybase p-7 ">
+    <header className="sticky inset-x-0 top-0 z-40  h-auto last:text-gray-600">
+      <div className={`"sticky inset-0 h-auto w-screen ${color ? "delay-50  drop-shadow-sm transition ease-in-out md:bg-greybase " : "delay-50 bg-transparent transition ease-in-out"}`}>
+        <div className="container z-50 mx-auto flex  w-screen flex-row items-center justify-between bg-greybase  p-7 ">
           {/*LOGO*/}
           <Link href="/" className="flex">
             <Image src={logo} alt="Logo" width={150} height={60} />
@@ -108,7 +108,7 @@ export default function Navbar() {
             </Link>
           </nav>
           {/*MOBILE ONLY*/}
-          <div className="z-50 flex items-center justify-center space-x-4 overscroll-y-none md:hidden ">
+          <div className="z-50  flex items-center justify-center space-x-4 overscroll-y-none  md:hidden ">
             <div>
               <Link href="/kurv" className="flex items-center gap-x-2 pl-4">
                 <Image src={ikoner_kopi} alt="Cart icon" width={30} height={30} />
