@@ -8,7 +8,6 @@ import mail from "../../public/assets/mail.svg";
 import Kontakt from "../../components/Kontakt";
 import GoogleMap from "../../components/GoogleMaps";
 import TextBanner from "../../components/TextBanner";
-import deksel from "../../public/assets/deksel_skrift2.svg";
 
 export default function Shop() {
   return (

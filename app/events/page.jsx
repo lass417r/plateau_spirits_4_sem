@@ -1,19 +1,16 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Button from "../../components/Button";
 import TextBanner from "../../components/TextBanner";
 import KontaktEvents from "../../components/KontaktEvents";
 
 import pic8 from "../../public/images/pic8.png";
 import pic9 from "../../public/images/pic9.png";
-import pic15 from "../../public/images/pic15.png";
 import pic10 from "../../public/images/pic10.png";
 import pic11 from "../../public/images/pic11.png";
 
 import gitter from "../../public/assets/gitter.svg";
 import events from "../../public/assets/events.svg";
-import deksel from "../../public/assets/deksel_skrift.svg";
 
 export default function Events() {
   return (
@@ -36,7 +33,6 @@ export default function Events() {
               Vores lokaler er velegnede til både private og erhvervsmæssige arrangementer, hvor I kan nyde vores unikke spiritus produkter under arrangementet. Vi tilpasser gerne arrangementet til
               jeres ønsker og behov og tilbyder også muligheden for at inkludere en rundvisning i vores destilleri og en præsentation af destillationsprocessen.
             </p>
-            {/* Virker ikke korrekt, skal gå ned af siden */}
             <a href="#KontaktEvents" className="voresKnap border-2 border-black400 bg-white100 px-5  py-3 font-ssort text-black400 md:text-deskButtonPrimary md:tracking-wider">
               Book Event
             </a>
