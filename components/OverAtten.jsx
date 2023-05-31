@@ -33,7 +33,7 @@ export default function OverAtten() {
           <section className="w-160px h-160px relative mt-10 flex flex-col items-center gap-5 ">
             <div className="relative">
               <Image className="z-1 h-full w-full animate-spin-slow p-5" src={textcirkel} width={400} height={400} alt="er du over atten?"></Image>
-              <Image className="absolute left-1/2 top-1/2 z-10 h-[65%] w-auto -translate-x-1/2 -translate-y-1/2 transform md:h-[70%]" src={lgo} width={400} height={400} alt="logo plateau"></Image>
+              <Image className="absolute left-1/2 top-1/2 z-10 h-[65%] w-auto -translate-x-1/2 -translate-y-1/2 transform md:h-[60%]" src={lgo} width={400} height={400} alt="logo plateau"></Image>
             </div>
             <div className=" flex flex-col items-center">
               <h1 className=" text-center font-ssort text-mobileH1 text-black500 md:text-wh1">Er du over 18?</h1>
