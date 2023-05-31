@@ -19,7 +19,7 @@ function ProductRecs(props) {
             <h5 className="text-mobileH5 font-normal md:text-wh5">La Luna Absint</h5>
             <p className="mx-10 mb-5 font-copy text-copy">445 DKK</p>
             <div className="hidden md:block">
-              <Button href={"/shop/roye-vodka"} text={"SE PRODUKT"}></Button>
+              <Button href={"/shop/la-luna-absint"} text={"SE PRODUKT"}></Button>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ function ProductRecs(props) {
             <h5 className="text-mobileH5 font-normal md:text-wh5">Touché Aquavit</h5>
             <p className="mx-10 mb-5 font-copy text-copy">295 DKK</p>
             <div className="hidden md:block">
-              <Button href={"/shop/roye-vodka"} text={"SE PRODUKT"}></Button>
+              <Button href={"/shop/touche"} text={"SE PRODUKT"}></Button>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ function ProductRecs(props) {
             <h5 className="text-mobileH5 font-normal md:text-wh5">Tranquillité Gin</h5>
             <p className="mx-10 mb-5 font-copy text-copy">395 DKK</p>
             <div className="hidden md:block">
-              <Button href={"/shop/roye-vodka"} text={"SE PRODUKT"}></Button>
+              <Button href={"/shop/tranquillite-gin"} text={"SE PRODUKT"}></Button>
             </div>
           </div>
         </div>
